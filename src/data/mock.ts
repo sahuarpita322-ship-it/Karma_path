@@ -391,4 +391,52 @@ export const culturalPlaceDetails = {
     images: [],
     mapLocation: { lat: 15.3350, lng: 76.4600 }
   },
+  't41': {
+    name: { en: 'Kodaikanal', hi: 'कोडाइकनाल', or: 'କୋଡାଇକାନାଲ୍' },
+    location: 'Tamil Nadu',
+    tagline: {
+      en: 'The Princess of Hill Stations.',
+      hi: 'हिल स्टेशनों की राजकुमारी।',
+      or: 'ପାର୍ବତ୍ୟ ସ୍ଥାନମାନଙ୍କର ରାଜକୁମାରୀ।'
+    },
+    heroImage: '/kodaikanal.jpg',
+    overview: {
+      en: 'Kodaikanal is a serene hill station located in the Palani Hills of Tamil Nadu. Known for its pleasant climate and lush greenery, its name translates to "The Gift of the Forest" in the Tamil language.',
+      hi: 'कोडाइकनाल तमिलनाडु की पलानी पहाड़ियों में स्थित एक शांत हिल स्टेशन है। अपनी सुखद जलवायु और हरी-भरी हरियाली के लिए जाना जाता है, तमिल भाषा में इसके नाम का अनुवाद "जंगल का उपहार" है।',
+      or: 'କୋଡାଇକାନାଲ୍ ତାମିଲନାଡୁର ପଲାନି ପାହାଡ଼ରେ ଅବସ୍ଥିତ ଏକ ଶାନ୍ତ ପାର୍ବତ୍ୟ ସ୍ଥାନ। ଏହାର ସୁଖଦ ଜଳବାୟୁ ଏବଂ ସବୁଜିମା ପାଇଁ ପରିଚିତ, ତାମିଲ ଭାଷାରେ ଏହାର ନାମର ଅର୍ଥ ହେଉଛି "ଜଙ୍ଗଲର ଉପହାର"।'
+    },
+    whyFamous: {
+      en: 'Famous for its star-shaped man-made lake, Pillar Rocks, and the rare Kurinji flower that blooms once every 12 years.',
+      hi: 'अपनी तारे के आकार की मानव निर्मित झील, पिलर रॉक्स और दुर्लभ कुरिंजी फूल के लिए प्रसिद्ध है जो हर 12 साल में एक बार खिलता है।',
+      or: 'ଏହାର ତାରା ଆକାରର ମନୁଷ୍ୟକୃତ ହ୍ରଦ, ପିଲାର୍ ରକ୍ସ ଏବଂ ୧୨ ବର୍ଷରେ ଥରେ ଫୁଟୁଥିବା ବିରଳ କୁରିଞ୍ଜି ଫୁଲ ପାଇଁ ପ୍ରସିଦ୍ଧ।'
+    },
+    history: {
+      en: 'Established in 1845 by American Christian missionaries and British bureaucrats to escape the high temperatures and tropical diseases of the plains.',
+      hi: 'मैदानी इलाकों के उच्च तापमान और उष्णकटिबंधीय बीमारियों से बचने के लिए 1845 में अमेरिकी ईसाई मिशनरियों और ब्रिटिश नौकरशाहों द्वारा स्थापित।',
+      or: 'ସମତଳ ଅଞ୍ଚଳର ଅତ୍ୟଧିକ ଗରମ ଏବଂ କ୍ରାନ୍ତୀୟ ରୋଗରୁ ରକ୍ଷା ପାଇବା ପାଇଁ ୧୮୪୫ ମସିହାରେ ଆମେରିକୀୟ ଖ୍ରୀଷ୍ଟିଆନ ମିଶନାରୀ ଏବଂ ବ୍ରିଟିଶ ଅଧିକାରୀମାନଙ୍କ ଦ୍ୱାରା ପ୍ରତିଷ୍ଠିତ।'
+    },
+    architecture: {
+      en: 'The town features a mix of traditional Tamil structures and colonial-era architecture, with several historic churches and heritage bungalows.',
+      hi: 'इस शहर में पारंपरिक तमिल संरचनाओं और औपनिवेशिक युग की वास्तुकला का मिश्रण है, जिसमें कई ऐतिहासिक चर्च और विरासत बंगले हैं।',
+      or: 'ଏହି ସହରରେ ପାରମ୍ପାରିକ ତାମିଲ ଗଠନ ଏବଂ ଔପନିବେଶିକ ଯୁଗର ସ୍ଥାପତ୍ୟର ମିଶ୍ରଣ ରହିଛି, ଯେଉଁଥିରେ ଅନେକ ଐତିହାସିକ ଗିର୍ଜାଘର ଏବଂ ଐତିହ୍ୟ ବଙ୍ଗଳା ଅଛି।'
+    },
+    culturalImportance: {
+      en: 'It is a hub for nature lovers and a prime example of eco-tourism, highlighting the importance of preserving the Western Ghats ecosystem.',
+      hi: 'यह प्रकृति प्रेमियों के लिए एक केंद्र और पर्यावरण-पर्यटन का एक प्रमुख उदाहरण है, जो पश्चिमी घाट पारिस्थितिकी तंत्र के संरक्षण के महत्व को उजागर करता है।',
+      or: 'ଏହା ପ୍ରକୃତି ପ୍ରେମୀଙ୍କ ପାଇଁ ଏକ କେନ୍ଦ୍ର ଏବଂ ଇକୋ-ଟୁରିଜିମର ଏକ ପ୍ରମୁଖ ଉଦାହରଣ, ଯାହା ପଶ୍ଚିମ ଘାଟ ପରିବେଶକୁ ସଂରକ୍ଷଣ କରିବାର ଗୁରୁତ୍ୱକୁ ଦର୍ଶାଏ।'
+    },
+    facts: [
+      { en: 'The Kurinji flower found here blooms only once every 12 years.', hi: 'यहां पाया जाने वाला कुरिंजी फूल हर 12 साल में केवल एक बार खिलता है।', or: 'ଏଠାରେ ମିଳୁଥିବା କୁରିଞ୍ଜି ଫୁଲ ୧୨ ବର୍ଷରେ କେବଳ ଥରେ ଫୁଟେ।' },
+      { en: 'Kodaikanal Lake is entirely man-made and was created in 1863.', hi: 'कोडाइकनाल झील पूरी तरह से मानव निर्मित है और इसे 1863 में बनाया गया था।', or: 'କୋଡାଇକାନାଲ୍ ହ୍ରଦ ସମ୍ପୂର୍ଣ୍ଣ ରୂପେ ମନୁଷ୍ୟକୃତ ଏବଂ ଏହାକୁ ୧୮୬୩ ମସିହାରେ ତିଆରି କରାଯାଇଥିଲା।' }
+    ],
+    visitorInfo: {
+      bestTimeToVisit: { en: 'October to March', hi: 'अक्टूबर से मार्च', or: 'ଅକ୍ଟୋବରରୁ ମାର୍ଚ୍ଚ' },
+      entry: { en: 'No entry fee to the town, specific spots have minimal fees.', hi: 'शहर में कोई प्रवेश शुल्क नहीं, विशिष्ट स्थानों पर न्यूनतम शुल्क है।', or: 'ସହରକୁ କୌଣସି ପ୍ରବେଶ ଶୁଳ୍କ ନାହିଁ, ନିର୍ଦ୍ଦିଷ୍ଟ ସ୍ଥାନଗୁଡ଼ିକରେ ସର୍ବନିମ୍ନ ଶୁଳ୍କ ଅଛି।' },
+      tips: [
+        { en: 'Carry warm clothing as temperatures can drop, especially at night.', hi: 'गर्म कपड़े साथ रखें क्योंकि तापमान गिर सकता है, खासकर रात में।', or: 'ଗରମ ପୋଷାକ ସାଥିରେ ନିଅନ୍ତୁ କାରଣ ତାପମାତ୍ରା କମିପାରେ, ବିଶେଷକରି ରାତିରେ।' }
+      ]
+    },
+    images: [],
+    mapLocation: { lat: 10.2381, lng: 77.4892 }
+  },
 };

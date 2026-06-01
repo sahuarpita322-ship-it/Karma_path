@@ -23,7 +23,7 @@ export function Navbar() {
           <NavLink to="/collections" className={({isActive}) => isActive ? 'font-semibold text-forest' : ''}>Collections</NavLink>
         </nav>
         <div className="flex items-center gap-3 flex-shrink-0">
-          <div className="hidden lg:block"><LanguageSwitcher /></div>
+          <LanguageSwitcher />
           <button onClick={toggleDarkMode} className="text-earth text-xl hover:text-forest transition" title="Toggle Dark Mode">
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>

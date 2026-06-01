@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useStore } from '../context/store';
 import { Link } from 'react-router-dom';
-import { FaCamera } from 'react-icons/fa';
+import { VscEdit } from 'react-icons/vsc';
 
 export function SettingsPage() {
   const { currentUser, updateUserProfile, isDarkMode, toggleDarkMode } = useStore();
@@ -63,9 +63,9 @@ export function SettingsPage() {
             
             <div className="flex items-center gap-6 mb-6">
               <div className="relative">
-                <img src={avatar || 'https://via.placeholder.com/150'} alt="Profile" className="h-24 w-24 rounded-full border-4 border-white object-cover shadow-xl" />
+                <img src={avatar || '/icon.svg.jpeg'} alt="Profile" className="h-24 w-24 rounded-full border-4 border-white object-cover shadow-xl" />
                 <button onClick={() => fileInputRef.current?.click()} className="absolute bottom-0 right-0 bg-forest text-white p-2 rounded-full hover:bg-emerald-700 transition shadow-md border border-white">
-                  <FaCamera size={14} />
+                  <VscEdit size={14} />
                 </button>
                 <input type="file" ref={fileInputRef} onChange={handleImageChange} accept="image/*" className="hidden" />
               </div>
