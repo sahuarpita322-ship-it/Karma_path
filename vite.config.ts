@@ -36,5 +36,8 @@ export default defineConfig({
         ]
       }
     })
-  ]
+  ],
+  preview: {
+    allowedHosts: ['karma-path.onrender.com']
+  }
 })
