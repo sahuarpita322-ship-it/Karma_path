@@ -12,7 +12,7 @@
   "dependencies": {
     "@google-cloud/local-auth": "^3.0.1",
     "d3": "^7.9.0",
-    "d3-shape": "^3.2.0",
+    "d3-shape": "3.1.0",
     "framer-motion": "^12.36.0",
     "google-auth-library": "^10.6.1",
     "leaflet": "^1.9.4",
@@ -23,8 +23,10 @@
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.13.1",
     "recharts": "^3.8.0",
-    "shape": "^10.0.1",
     "zustand": "^5.0.11"
+  },
+  "overrides": {
+    "d3-shape": "3.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
