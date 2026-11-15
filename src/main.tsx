@@ -36,6 +36,13 @@ if ('serviceWorker' in navigator) {
         }
       }).catch((err) => console.log('Cache clear error:', err));
     }
+  } else {
+    // On production (e.g. Render), ensure the service worker checks for fresh updates immediately
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (const registration of registrations) {
+        registration.update();
+      }
+    }).catch(() => {});
   }
 }
 
