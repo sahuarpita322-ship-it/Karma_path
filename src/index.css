@@ -1,132 +1,418 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* =========================================================================
+   KARMA-PATH: CINEMATIC AI-POWERED 3D HERITAGE DESIGN SYSTEM
+   Visual Identity: Royal Violet (#170D2C) + Cosmic Purple (#291542) +
+                    Lavender (#B9A5DF) + Pearl Silver (#E8E3F0) + Holographic Violet (#A98AD9)
+   Style: Immersive 3D Experience + Futuristic Holographic Glassmorphism
+   ========================================================================= */
 
-@layer base {
-  :root {
-    --background: 40 33% 98%;
-    --foreground: 25 20% 15%;
+:root {
+  /* Crisp White & Royal Purple / Light Mode */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FAF8FC;
+  --bg-card: rgba(255, 255, 255, 0.94);
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  --text-primary: #180B2B;
+  --text-secondary: #503C6B;
+  --text-muted: #8E7AA6;
+  --accent-royal: #7955AE;
+  --accent-holo: #9370D8;
+  --accent-lavender: #B9A5DF;
+  --accent-silver: #F0EAF8;
+  --accent-lilac: #F8F5FD;
+  --border-glass: rgba(121, 85, 174, 0.16);
+  --border-holo: rgba(121, 85, 174, 0.35);
+  --border-subtle: rgba(185, 165, 223, 0.3);
+  --glass-shadow: 0 10px 30px -5px rgba(121, 85, 174, 0.1), 0 4px 12px -2px rgba(121, 85, 174, 0.06);
+  --glass-shadow-hover: 0 20px 40px -8px rgba(121, 85, 174, 0.2), 0 8px 18px -4px rgba(121, 85, 174, 0.12);
+  --holo-glow: 0 0 25px rgba(121, 85, 174, 0.25);
+}
 
-    --card: 0 0% 100%;
-    --card-foreground: 25 20% 15%;
+html.dark {
+  /* Royal Purple & Lavender / Dark Mode */
+  --bg-primary: #180B2B;         /* Deep Royal Purple */
+  --bg-secondary: #220F3A;       /* Royal Purple Mid */
+  --bg-card: rgba(34, 15, 58, 0.76);
+  --bg-card-hover: rgba(48, 22, 82, 0.9);
+  --bg-glass: rgba(24, 11, 43, 0.9);
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8E3F0;
+  --text-muted: #B9A5DF;
+  --accent-royal: #FFFFFF;       /* Crisp White */
+  --accent-holo: #D9CCF2;        /* Pale Lavender */
+  --accent-lavender: #B9A5DF;    /* Lavender */
+  --accent-silver: #E8E3F0;      /* Pearl Silver */
+  --accent-lilac: #FAF8FC;
+  --border-glass: rgba(185, 165, 223, 0.22);
+  --border-holo: rgba(217, 204, 242, 0.45);
+  --border-subtle: rgba(232, 227, 240, 0.28);
+  --glass-shadow: 0 14px 40px 0 rgba(10, 4, 20, 0.65), 0 4px 14px 0 rgba(121, 85, 174, 0.25);
+  --glass-shadow-hover: 0 25px 50px -5px rgba(10, 4, 20, 0.85), 0 10px 28px -2px rgba(185, 165, 223, 0.4);
+  --holo-glow: 0 0 35px rgba(185, 165, 223, 0.45);
+  color-scheme: dark;
+}
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 25 20% 15%;
+/* Global Reset & Typography */
+* {
+  box-sizing: border-box;
+}
 
-    --primary: 120 55% 23%;
-    --primary-foreground: 40 33% 96%;
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
 
-    --secondary: 16 22% 35%;
-    --secondary-foreground: 40 33% 96%;
+/* Atmospheric Ambient Gradients */
+body:not(.dark body) {
+  background: 
+    radial-gradient(circle at 10% 10%, rgba(240, 234, 248, 0.8) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(232, 227, 240, 0.6) 0%, transparent 50%),
+    #FFFFFF;
+}
 
-    --muted: 36 40% 92%;
-    --muted-foreground: 25 10% 45%;
+html.dark body {
+  background: 
+    radial-gradient(circle at 15% 15%, rgba(121, 85, 174, 0.25) 0%, transparent 55%),
+    radial-gradient(circle at 85% 85%, rgba(57, 32, 92, 0.4) 0%, transparent 55%),
+    #180B2B;
+}
 
-    --accent: 38 70% 88%;
-    --accent-foreground: 25 20% 15%;
+/* =========================================================================
+   CINEMATIC VOLUMETRIC SKY & CLOUD ANIMATIONS
+   ========================================================================= */
 
-    --destructive: 0 72% 50%;
-    --destructive-foreground: 0 0% 100%;
+@keyframes cloud-drift-slow {
+  0% { transform: translate3d(0, 0, 0) scale(1.05); }
+  50% { transform: translate3d(-3%, -1%, 0) scale(1.08); }
+  100% { transform: translate3d(0, 0, 0) scale(1.05); }
+}
 
-    --border: 36 25% 85%;
-    --input: 36 25% 85%;
-    --ring: 120 55% 23%;
+@keyframes cloud-drift-reverse {
+  0% { transform: translate3d(0, 0, 0) scale(1.02); }
+  50% { transform: translate3d(3%, 1.5%, 0) scale(1.06); }
+  100% { transform: translate3d(0, 0, 0) scale(1.02); }
+}
 
-    --radius: 0.75rem;
+@keyframes godray-glow {
+  0%, 100% { opacity: 0.25; transform: rotate(-5deg) scale(1); }
+  50% { opacity: 0.45; transform: rotate(-3deg) scale(1.05); }
+}
 
-    --karma-green: 120 55% 23%;
-    --karma-brown: 16 22% 35%;
-    --karma-beige: 38 70% 88%;
-    --karma-sand: 36 40% 92%;
-    --karma-gold: 43 90% 55%;
+@keyframes holo-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    --sidebar-background: 120 20% 97%;
-    --sidebar-foreground: 25 20% 15%;
-    --sidebar-primary: 120 55% 23%;
-    --sidebar-primary-foreground: 40 33% 96%;
-    --sidebar-accent: 38 70% 88%;
-    --sidebar-accent-foreground: 25 20% 15%;
-    --sidebar-border: 36 25% 85%;
-    --sidebar-ring: 120 55% 23%;
+@keyframes pulse-violet-ring {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(169, 138, 217, 0.4), 0 0 25px rgba(121, 85, 174, 0.25);
   }
-
-  .dark {
-    --background: 25 20% 8%;
-    --foreground: 36 40% 92%;
-
-    --card: 25 18% 12%;
-    --card-foreground: 36 40% 92%;
-
-    --popover: 25 18% 12%;
-    --popover-foreground: 36 40% 92%;
-
-    --primary: 120 45% 35%;
-    --primary-foreground: 40 33% 96%;
-
-    --secondary: 16 18% 25%;
-    --secondary-foreground: 36 40% 92%;
-
-    --muted: 25 15% 18%;
-    --muted-foreground: 36 20% 60%;
-
-    --accent: 38 40% 25%;
-    --accent-foreground: 36 40% 92%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 25 15% 20%;
-    --input: 25 15% 20%;
-    --ring: 120 45% 35%;
-
-    --sidebar-background: 25 18% 10%;
-    --sidebar-foreground: 36 40% 92%;
-    --sidebar-primary: 120 45% 35%;
-    --sidebar-primary-foreground: 40 33% 96%;
-    --sidebar-accent: 38 40% 25%;
-    --sidebar-accent-foreground: 36 40% 92%;
-    --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 120 45% 35%;
+  50% {
+    box-shadow: 0 0 0 8px rgba(169, 138, 217, 0), 0 0 35px rgba(169, 138, 217, 0.45);
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+/* Cinematic Clouds Layers */
+.cloud-layer-1 {
+  animation: cloud-drift-slow 24s ease-in-out infinite;
+  will-change: transform;
+}
 
-  body {
-    @apply bg-background text-foreground font-sans;
-    font-family: 'Source Sans 3', system-ui, sans-serif;
-  }
+.cloud-layer-2 {
+  animation: cloud-drift-reverse 32s ease-in-out infinite;
+  will-change: transform;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+.godray-beam {
+  animation: godray-glow 9s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* =========================================================================
+   FUTURISTIC HOLOGRAPHIC GLASSMORPHISM DESIGN SYSTEM
+   ========================================================================= */
+
+.glass-nav {
+  background: var(--bg-glass);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border-bottom: 1px solid var(--border-glass);
+  box-shadow: 0 4px 28px 0 rgba(23, 13, 44, 0.12);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(22px) saturate(170%);
+  -webkit-backdrop-filter: blur(22px) saturate(170%);
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--glass-shadow);
+  border-radius: 1.25rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  background: var(--bg-card-hover);
+  border-color: var(--border-holo);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-pill {
+  background: rgba(185, 165, 223, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+.glass-pill:hover {
+  background: rgba(185, 165, 223, 0.3);
+  border-color: var(--accent-holo);
+  box-shadow: 0 0 15px rgba(169, 138, 217, 0.3);
+}
+
+/* =========================================================================
+   3D CARD SYSTEM WITH INTERACTIVE TILT & IMAGE DEPTH
+   ========================================================================= */
+
+.card-3d {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-3d:hover {
+  transform: translateY(-6px) perspective(1000px) rotateX(2deg) rotateY(-1deg);
+}
+
+.card-3d-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-3d:hover .card-3d-img {
+  transform: scale(1.06) translateZ(10px);
+}
+
+/* =========================================================================
+   PURPLE & WHITE BUTTON SYSTEM
+   Light Mode: Royal Purple & Lavender
+   Dark Mode: Crisp White & Lavender ("sab buttons sab white and levender rahega dark main")
+   ========================================================================= */
+
+.btn-holo-primary, .btn-royal {
+  position: relative;
+  overflow: hidden;
+  background: #7955AE;
+  color: #FFFFFF;
+  border: 1.5px solid rgba(121, 85, 174, 0.4);
+  border-radius: 9999px;
+  padding: 0.85rem 2rem;
+  font-weight: 800;
+  font-size: 0.925rem;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 20px rgba(121, 85, 174, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-holo-primary:hover, .btn-royal:hover {
+  background: #613A9E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(121, 85, 174, 0.5);
+}
+
+.btn-holo-secondary, .btn-lavender {
+  position: relative;
+  overflow: hidden;
+  background: #F0EAF8;
+  color: #5A2C99;
+  border: 1.5px solid rgba(121, 85, 174, 0.35);
+  border-radius: 9999px;
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  font-size: 0.925rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-holo-secondary:hover, .btn-lavender:hover {
+  background: #E2D4F5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(121, 85, 174, 0.2);
+}
+
+/* Dark Mode: Buttons are Crisp White & Lavender */
+html.dark .btn-holo-primary, html.dark .btn-royal {
+  background: #FFFFFF !important;
+  color: #180B2B !important;
+  border: 1.5px solid #FFFFFF !important;
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.45), 0 0 30px rgba(185, 165, 223, 0.4) !important;
+}
+
+html.dark .btn-holo-primary:hover, html.dark .btn-royal:hover {
+  background: #F3EDFC !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 35px rgba(255, 255, 255, 0.65), 0 0 35px rgba(185, 165, 223, 0.6) !important;
+}
+
+html.dark .btn-holo-secondary, html.dark .btn-lavender {
+  background: rgba(185, 165, 223, 0.22) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid rgba(217, 204, 242, 0.65) !important;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px rgba(185, 165, 223, 0.3) !important;
+}
+
+html.dark .btn-holo-secondary:hover, html.dark .btn-lavender:hover {
+  background: rgba(185, 165, 223, 0.38) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(185, 165, 223, 0.5) !important;
+}
+
+/* =========================================================================
+   AI HOLOGRAPHIC SEARCH BAR
+   ========================================================================= */
+
+.holo-search-container {
+  position: relative;
+  border-radius: 1.25rem;
+  background: var(--bg-card);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid var(--border-holo);
+  box-shadow: 0 12px 35px 0 rgba(23, 13, 44, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.holo-search-container:focus-within {
+  border-color: var(--accent-holo);
+  box-shadow: 0 0 0 3px rgba(169, 138, 217, 0.25), 0 16px 40px rgba(121, 85, 174, 0.35);
+}
+
+/* =========================================================================
+   CINEMATIC TEMPLE HERO ENVIRONMENT
+   ========================================================================= */
+
+.hero-cinematic-stage {
+  position: relative;
+  min-height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+}
+
+/* Subtle Distant Temple Positioning (Farther in perspective) */
+.hero-distant-temple {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.92);
+  width: 90vw;
+  max-width: 1200px;
+  height: 65vh;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 2rem;
+  opacity: 0.88;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 50%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 50%, transparent 85%);
+  filter: contrast(1.05) saturate(1.1);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Volumetric Atmospheric Fog Overlay */
+html.dark .hero-volumetric-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 50% 40%, rgba(57, 32, 92, 0.45) 0%, rgba(23, 13, 44, 0.88) 75%, #170D2C 100%),
+    linear-gradient(180deg, rgba(23, 13, 44, 0.3) 0%, transparent 40%, #170D2C 95%);
+}
+
+html:not(.dark) .hero-volumetric-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 50% 40%, rgba(217, 204, 242, 0.45) 0%, rgba(245, 240, 252, 0.82) 75%, #F5F0FC 100%),
+    linear-gradient(180deg, rgba(245, 240, 252, 0.25) 0%, transparent 40%, #F5F0FC 95%);
+}
+
+/* Soft Violet Atmospheric Glow */
+.hero-lavender-glow {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  width: 70vw;
+  height: 50vh;
+  background: radial-gradient(circle, rgba(169, 138, 217, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(50px);
+}
+
+/* Editorial Serif & Headings */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .cloud-layer-1,
+  .cloud-layer-2,
+  .godray-beam {
+    animation: none !important;
   }
 }
 
-@layer utilities {
-  .tribal-pattern {
-    background-image: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      hsl(var(--karma-beige) / 0.3) 10px,
-      hsl(var(--karma-beige) / 0.3) 12px
-    );
-  }
+/* Custom Scrollbar in Royal Violet */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
-  .glass-card {
-    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
-  }
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
 
-  .karma-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--karma-green) / 0.8));
-  }
+::-webkit-scrollbar-thumb {
+  background: rgba(121, 85, 174, 0.45);
+  border-radius: 4px;
+}
 
-  .gold-gradient {
-    background: linear-gradient(135deg, hsl(var(--karma-gold)), hsl(43 80% 45%));
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(169, 138, 217, 0.7);
 }
