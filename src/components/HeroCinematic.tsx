@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { 
-  FaSearch, 
-  FaMapMarkerAlt, 
-  FaHandsHelping, 
-  FaShieldAlt, 
-  FaLandmark 
-} from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 
 interface HeroCinematicProps {
   onSearch?: (query: string) => void;
@@ -17,11 +11,14 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  const popularPills = [
+  const popularPillsRow1 = [
     { label: 'Jagannath Temple, Puri', to: '/destination/puri-jagannath' },
     { label: 'Konark Sun Temple', to: '/destination/konark' },
     { label: 'Raghurajpur Craft Village', to: '/village/v-raghurajpur' },
     { label: 'Chilika Lake & Dolphins', to: '/destination/chilika' },
+  ];
+
+  const popularPillsRow2 = [
     { label: 'Sambalpuri Weavers', to: '/villages' },
   ];
 
@@ -47,132 +44,117 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onSearch }) => {
   return (
     <section 
       onMouseMove={handleMouseMove}
-      className="relative min-h-[85vh] sm:min-h-screen w-full flex items-center justify-center overflow-hidden py-16 sm:py-24"
+      className="relative min-h-[82vh] sm:min-h-[88vh] w-full flex items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-16 sm:pb-20"
     >
       {/* =========================================================================
           LAYER 0: MAJESTIC SHREE JAGANNATH TEMPLE PURI FULL-SCREEN BACKGROUND
-          With Authentic Sunset Hues, Nilachakra Flag & Temple Shikharas
+          Authentic temple shikhara, blue sky and warm sunset glow
           ========================================================================= */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
           src="/puri.jpg"
           alt="Shree Jagannath Temple, Puri, Odisha"
-          className="w-full h-full object-cover object-[center_35%] transition-transform duration-1000 ease-out scale-105"
+          className="w-full h-full object-cover object-[center_28%] scale-105"
           style={{
             transform: `scale(1.05) translate3d(${mousePos.x * -6}px, ${mousePos.y * -4}px, 0)`,
+            transition: 'transform 0.4s ease-out'
           }}
         />
 
-        {/* Ambient Dark Atmospheric Gradient: Keeps Temple Gloriously Visible */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#180B2B] via-[#180B2B]/40 to-[#180B2B]/20 dark:block hidden" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#180B2B]/40 via-transparent to-[#180B2B] dark:block hidden" />
+        {/* Subtle Ambient Vignette */}
+        <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-black/15 dark:from-[#180B2B] dark:via-transparent dark:to-black/35" />
 
-        {/* Ambient Light Mode Gradient: Warm Ethereal Sunset Haze */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8FC]/80 via-transparent to-black/20 dark:hidden block" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-[#FAF8FC]/80 dark:hidden block" />
+        {/* Ethereal Smooth Fog / Mist Bottom Transition into White Section */}
+        <div className="absolute bottom-0 left-0 right-0 h-44 bg-gradient-to-t from-white via-white/85 to-transparent dark:from-[#180B2B] dark:via-[#180B2B]/85 pointer-events-none" />
       </div>
 
       {/* =========================================================================
-          LAYER 1: SOFT DRIFTING CLOUDY & MIST EFFECTS
-          Creates the Mystical, Atmospheric, Celestial Temple Cloud Ambiance
-          ========================================================================= */}
-      <div className="absolute inset-0 z-1 pointer-events-none overflow-hidden">
-        {/* Cloud Layer 1: Floating Low Mist across Temple Base */}
-        <div 
-          className="absolute -bottom-20 left-0 right-0 h-96 opacity-60 dark:opacity-40 blur-2xl bg-gradient-to-t from-[#180B2B] via-[#7955AE]/20 to-transparent animate-pulse duration-[6000ms]"
-        />
-
-        {/* Cloud Layer 2: Ethereal Soft White/Lavender Drifting Cloud Drift */}
-        <div 
-          className="absolute top-1/4 -left-40 w-[600px] h-[300px] rounded-full bg-white/20 dark:bg-[#B9A5DF]/15 blur-3xl transform -rotate-12 transition-transform duration-1000"
-          style={{ transform: `translate3d(${mousePos.x * 15}px, ${mousePos.y * 10}px, 0)` }}
-        />
-
-        {/* Cloud Layer 3: Celestial Twilight Glow over the Nilachakra */}
-        <div 
-          className="absolute top-10 right-10 w-[500px] h-[350px] rounded-full bg-amber-400/15 dark:bg-[#7955AE]/25 blur-3xl pointer-events-none"
-        />
-
-        {/* Cloud Layer 4: Soft Horizon Mist Stream */}
-        <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#FAF8FC] dark:from-[#180B2B] to-transparent pointer-events-none" />
-      </div>
-
-      {/* =========================================================================
-          LAYER 2: HERO EDITORIAL CONTENT IN ELEGANT GLASSMORPHISM CARD
+          LAYER 1: HERO EDITORIAL CONTENT (Centered exactly as in design)
           ========================================================================= */}
       <div 
-        className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6"
+        className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4 sm:space-y-5"
         style={{
           transform: `translate3d(${mousePos.x * 4}px, ${mousePos.y * 3}px, 0)`,
           transition: 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
-        <div className="rounded-3xl bg-white/80 dark:bg-[#180B2B]/80 backdrop-blur-2xl border border-white/80 dark:border-white/15 shadow-[0_20px_60px_-15px_rgba(24,11,43,0.35)] dark:shadow-[0_25px_65px_-15px_rgba(0,0,0,0.85)] p-6 sm:p-10 md:p-12 text-center space-y-6">
-          
-          {/* Floating Purpose-Driven Mission Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] bg-[#7955AE]/15 text-[#5B21B6] border border-[#7955AE]/30 dark:bg-white/10 dark:text-[#E8E3F0] dark:border-white/20 backdrop-blur-md shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-[#7955AE] dark:bg-[#B9A5DF] animate-ping" />
-            <span>Karma-Path · Travel with Purpose · Empower Local Odisha</span>
+        
+        {/* Floating Mission Badge */}
+        <div className="inline-flex items-center gap-2.5 px-5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] bg-white/95 text-[#200D38] border border-white/80 dark:bg-[#1E0E34]/95 dark:text-[#E8E3F0] dark:border-[#B9A5DF]/30 shadow-md backdrop-blur-md">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#B9A5DF] dark:bg-[#B9A5DF]" />
+          <span>KARMA-PATH · TRAVEL WITH PURPOSE · EMPOWER LOCAL ODISHA</span>
+        </div>
+
+        {/* Main Editorial Heading */}
+        <div className="space-y-1">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-cinzel font-black tracking-tight text-[#180B2B] dark:text-white leading-[1.05] drop-shadow-[0_2px_14px_rgba(255,255,255,0.7)] dark:drop-shadow-[0_2px_14px_rgba(0,0,0,0.85)]">
+            DISCOVER ODISHA.
+          </h1>
+          <div className="text-4xl sm:text-6xl lg:text-7xl font-serif italic font-bold text-[#6B46C1] dark:text-[#DDD1F8] leading-[1.08] drop-shadow-[0_2px_14px_rgba(255,255,255,0.85)] dark:drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">
+            Empower Its Soul.
           </div>
 
-          {/* Main Editorial Heading */}
-          <div className="space-y-3">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-cinzel font-black tracking-tight text-[#180B2B] dark:text-[#FFFFFF] leading-[1.12]">
-              Discover Odisha.{' '}
-              <span className="text-[#5B21B6] dark:text-[#DDD1F8] font-serif italic block sm:inline font-extrabold drop-shadow-sm">
-                Empower Its Soul.
-              </span>
-            </h1>
+          <p className="text-base sm:text-xl text-[#2D1D44] dark:text-[#EDE6F8] font-serif italic max-w-2xl mx-auto leading-relaxed pt-2 drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] dark:drop-shadow-none">
+            Do good deeds. Elevate master handloom weavers and artisans. Experience living sacred traditions and travel with lasting purpose.
+          </p>
+        </div>
 
-            <p className="text-sm sm:text-base lg:text-lg text-stone-700 dark:text-[#EDE6F8] font-serif italic max-w-2xl mx-auto leading-relaxed">
-              Do good deeds. Elevate master handloom weavers and artisans. Experience living sacred traditions and travel with lasting purpose.
-            </p>
-          </div>
-
-          {/* Glassmorphic Search Bar */}
-          <form 
-            onSubmit={handleSearchSubmit}
-            className="max-w-2xl mx-auto relative group"
-          >
-            <div className="relative flex items-center rounded-2xl bg-white/95 dark:bg-[#1E0E34]/95 border border-[#7955AE]/30 dark:border-[#B9A5DF]/40 p-2 shadow-xl backdrop-blur-xl group-hover:border-[#7955AE] dark:group-hover:border-white transition-all duration-300">
-              <div className="pl-4 pr-3 text-[#7955AE] dark:text-[#B9A5DF]">
-                <FaSearch size={18} />
-              </div>
-
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search Jagannath Puri, Sambalpuri Ikat, Raghurajpur, Odissi..."
-                className="w-full bg-transparent border-none text-xs sm:text-sm font-medium text-[#180B2B] dark:text-white placeholder-[#716680] dark:placeholder-[#B9A5DF]/70 focus:outline-none"
-              />
-
-              <button
-                type="submit"
-                className="px-5 py-2.5 rounded-xl font-cinzel font-bold text-xs uppercase tracking-wider transition-all duration-300 bg-[#7955AE] text-white hover:bg-[#613A9E] shadow-md shadow-purple-500/25 dark:bg-white dark:text-[#180B2B] dark:hover:bg-[#E8E3F0]"
-              >
-                Explore
-              </button>
+        {/* Rounded-Full Pill Search Bar */}
+        <form 
+          onSubmit={handleSearchSubmit}
+          className="max-w-2xl mx-auto pt-2"
+        >
+          <div className="relative flex items-center rounded-full bg-white dark:bg-[#1E0E34] border border-stone-200/90 dark:border-[#B9A5DF]/30 p-1.5 pl-5 shadow-xl backdrop-blur-xl hover:shadow-2xl transition-all duration-300">
+            <div className="text-[#6B46C1] dark:text-[#B9A5DF] mr-3">
+              <FaSearch size={16} />
             </div>
-          </form>
 
-          {/* Quick Discovery Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 pt-1 max-w-3xl mx-auto">
-            <span className="text-xs font-semibold text-[#503C6B] dark:text-[#D9CCF2] mr-1 hidden sm:inline">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search Jagannath Puri, Sambalpuri Ikat, Raghurajpur, Odissi..."
+              className="w-full bg-transparent border-none text-xs sm:text-sm font-medium text-[#180B2B] dark:text-white placeholder-stone-500 dark:placeholder-[#B9A5DF]/70 focus:outline-none"
+            />
+
+            <button
+              type="submit"
+              className="px-6 sm:px-8 py-2.5 rounded-full font-cinzel font-bold text-xs uppercase tracking-wider transition-all duration-300 bg-[#6B46C1] hover:bg-[#5B21B6] text-white shadow-md flex-shrink-0"
+            >
+              EXPLORE
+            </button>
+          </div>
+        </form>
+
+        {/* Popular Pills in 2 Rows matching screenshot */}
+        <div className="space-y-2 pt-1 max-w-3xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <span className="text-xs font-semibold text-stone-600 dark:text-[#D9CCF2] mr-1 hidden sm:inline">
               Popular:
             </span>
-            {popularPills.map((pill, i) => (
+            {popularPillsRow1.map((pill, i) => (
               <button
                 key={i}
                 onClick={() => navigate(pill.to)}
-                className="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all duration-300 bg-[#7955AE]/10 dark:bg-white/10 text-[#301B4E] dark:text-[#E8E3F0] border border-[#7955AE]/20 dark:border-white/20 hover:border-[#7955AE] dark:hover:border-white hover:scale-105 shadow-sm"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-white/95 dark:bg-[#1E0E34]/90 text-stone-800 dark:text-[#E8E3F0] border border-stone-200/90 dark:border-[#B9A5DF]/30 hover:border-[#6B46C1] hover:scale-105 shadow-sm"
               >
                 {pill.label}
               </button>
             ))}
           </div>
-
+          <div className="flex justify-center">
+            {popularPillsRow2.map((pill, i) => (
+              <button
+                key={i}
+                onClick={() => navigate(pill.to)}
+                className="px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 bg-white/95 dark:bg-[#1E0E34]/90 text-stone-800 dark:text-[#E8E3F0] border border-stone-200/90 dark:border-[#B9A5DF]/30 hover:border-[#6B46C1] hover:scale-105 shadow-sm"
+              >
+                {pill.label}
+              </button>
+            ))}
+          </div>
         </div>
+
       </div>
 
     </section>

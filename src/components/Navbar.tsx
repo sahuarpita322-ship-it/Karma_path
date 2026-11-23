@@ -48,17 +48,17 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-[#B9A5DF]/25 transition-all duration-300">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
         
-        {/* Brand Logo & Tagline */}
+        {/* Brand Logo & Tagline (Exact Match to Design Reference) */}
         <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
-          <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#7955AE]/40 dark:border-[#B9A5DF]/50 shadow-[0_0_20px_rgba(121,85,174,0.35)] group-hover:scale-105 transition bg-[#7955AE] flex-shrink-0" style={{ width: '36px', height: '36px', minWidth: '36px', minHeight: '36px' }}>
-            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" width="36" height="36" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <div className="w-9 h-9 rounded-xl bg-[#5C3691] border border-[#7955AE]/40 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition flex-shrink-0">
+            <span className="font-cinzel font-black text-base tracking-wider">KP</span>
           </div>
           <div>
             <div className="font-cinzel font-black text-lg tracking-wider text-[#180B2B] dark:text-[#FFFFFF] group-hover:text-[#7955AE] dark:group-hover:text-[#D9CCF2] transition">
-              Karma-Path
+              KARMA-PATH
             </div>
             <div className="hidden lg:block text-[8px] tracking-[0.2em] uppercase font-bold text-[#503C6B] dark:text-[#B9A5DF] -mt-1">
-              Odisha Living Heritage
+              ODISHA LIVING HERITAGE
             </div>
           </div>
         </Link>

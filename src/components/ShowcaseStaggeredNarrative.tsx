@@ -67,14 +67,14 @@ export const ShowcaseStaggeredNarrative: React.FC = () => {
       
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-[#7955AE]/15 text-[#7955AE] dark:bg-white/15 dark:text-white border border-[#7955AE]/25 dark:border-white/20">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-purple-100/90 text-[#6B46C1] dark:bg-white/15 dark:text-white border border-purple-200/80 dark:border-white/20 shadow-sm">
           <FaHeart className="text-rose-500 animate-pulse" />
-          <span>How Karma-Path Empowers Odisha</span>
+          <span>HOW KARMA-PATH EMPOWERS ODISHA</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl font-cinzel font-black tracking-tight text-[#180B2B] dark:text-white leading-tight">
-          What We Stand For:{' '}
-          <span className="text-[#5B21B6] dark:text-[#E0D2FE] font-serif italic font-extrabold drop-shadow-sm">
+          WHAT WE STAND FOR:{' '}
+          <span className="text-[#6B46C1] dark:text-[#DDD1F8] font-serif italic font-extrabold drop-shadow-sm">
             Incredible Work & Purpose
           </span>
         </h2>
