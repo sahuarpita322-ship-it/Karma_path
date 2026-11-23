@@ -50,8 +50,8 @@ export function Navbar() {
         
         {/* Brand Logo & Tagline */}
         <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
-          <div className="w-9 h-9 rounded-xl bg-[#7955AE] dark:bg-white border border-[#7955AE]/40 dark:border-white/50 flex items-center justify-center text-white dark:text-[#180B2B] shadow-[0_0_20px_rgba(121,85,174,0.35)] dark:shadow-[0_0_20px_rgba(255,255,255,0.45)] group-hover:scale-105 transition">
-            <span className="font-cinzel font-black text-base tracking-wider">KP</span>
+          <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#7955AE]/40 dark:border-[#B9A5DF]/50 shadow-[0_0_20px_rgba(121,85,174,0.35)] group-hover:scale-105 transition bg-[#7955AE] flex-shrink-0">
+            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="font-cinzel font-black text-lg tracking-wider text-[#180B2B] dark:text-[#FFFFFF] group-hover:text-[#7955AE] dark:group-hover:text-[#D9CCF2] transition">
@@ -156,19 +156,26 @@ export function Navbar() {
         {/* Right Action Tools: Language, Theme Toggle & User Auth */}
         <div className="flex items-center gap-2 sm:gap-3">
           
-          {/* PWA Install Button (highlighted on localhost or when installable) */}
+          {/* PWA Install Button (with App Logo - for Localhost & Desktop) */}
           {!isInstalled && (
             <button
               onClick={promptInstall}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition shadow-sm cursor-pointer ${
+              className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold transition shadow-sm cursor-pointer group ${
                 isLocalhost 
-                  ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:scale-105 active:scale-95 shadow-emerald-500/20' 
+                  ? 'bg-gradient-to-r from-emerald-600 via-teal-600 to-[#7955AE] text-white hover:scale-105 active:scale-95 shadow-emerald-500/25 border border-amber-300/40 ring-1 ring-emerald-400/30' 
                   : 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/35 hover:bg-emerald-500/25'
               }`}
-              title="Install Karma-Path to Desktop / Device (Works 100% Offline)"
+              title="Install Karma-Path to Desktop / Device (Works 100% Offline on Localhost)"
             >
-              <FaDownload className="text-xs animate-bounce" />
-              <span>{isLocalhost ? 'Install Localhost' : 'Install App'}</span>
+              <img 
+                src="/icon.svg.jpeg" 
+                alt="App Logo" 
+                className="w-5 h-5 rounded-md object-cover shadow-sm ring-1 ring-white/50 group-hover:rotate-6 transition-transform flex-shrink-0" 
+              />
+              <span className="font-bold tracking-tight">
+                {isLocalhost ? 'Install Localhost' : 'Install App'}
+              </span>
+              <FaDownload className="text-[10px] text-amber-300 animate-bounce flex-shrink-0" />
             </button>
           )}
 
@@ -332,10 +339,16 @@ export function Navbar() {
                   setMobileMenuOpen(false);
                   promptInstall();
                 }}
-                className="p-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white flex items-center justify-between font-bold text-xs shadow-md"
+                className="p-2.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-[#7955AE] text-white flex items-center justify-between font-bold text-xs shadow-md border border-amber-300/30"
               >
-                <div className="flex items-center gap-2">
-                  <FaDownload className="animate-bounce" /> {isLocalhost ? 'Install Localhost App' : 'Install Karma-Path App'}
+                <div className="flex items-center gap-2.5">
+                  <img 
+                    src="/icon.svg.jpeg" 
+                    alt="Logo" 
+                    className="w-6 h-6 rounded-lg object-cover ring-1 ring-white/60 shadow flex-shrink-0" 
+                  />
+                  <span>{isLocalhost ? 'Install Localhost App' : 'Install Karma-Path App'}</span>
+                  <FaDownload className="animate-bounce text-amber-300 text-[11px]" />
                 </div>
                 <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-white/20">Offline PWA</span>
               </button>

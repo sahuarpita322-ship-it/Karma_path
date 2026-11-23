@@ -32,10 +32,10 @@ export function DesktopAppModal({
           <FaTimes size={16} />
         </button>
 
-        {/* Header with Desktop Icon */}
+        {/* Header with App Logo */}
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#7955AE] to-[#503C6B] text-white flex items-center justify-center shadow-lg border border-[#B9A5DF]/40">
-            <FaDesktop size={26} />
+          <div className="relative w-14 h-14 rounded-2xl overflow-hidden shadow-lg border-2 border-amber-400/50 flex-shrink-0 bg-[#7955AE]">
+            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
@@ -67,10 +67,11 @@ export function DesktopAppModal({
               onClick={() => {
                 onInstall();
               }}
-              className="w-full sm:w-auto px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold text-xs shadow-md hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2 flex-shrink-0"
+              className="w-full sm:w-auto px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-[#7955AE] text-white font-bold text-xs shadow-md hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2 flex-shrink-0 border border-amber-300/40"
             >
-              <FaDownload size={12} className="animate-bounce" />
+              <img src="/icon.svg.jpeg" alt="Logo" className="w-5 h-5 rounded-md object-cover ring-1 ring-white/60 shadow-sm" />
               <span>Install to Desktop</span>
+              <FaDownload size={11} className="animate-bounce ml-0.5 text-amber-300" />
             </button>
           )}
         </div>
