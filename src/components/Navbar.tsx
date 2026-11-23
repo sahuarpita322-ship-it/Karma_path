@@ -50,8 +50,8 @@ export function Navbar() {
         
         {/* Brand Logo & Tagline */}
         <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
-          <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#7955AE]/40 dark:border-[#B9A5DF]/50 shadow-[0_0_20px_rgba(121,85,174,0.35)] group-hover:scale-105 transition bg-[#7955AE] flex-shrink-0">
-            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" />
+          <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#7955AE]/40 dark:border-[#B9A5DF]/50 shadow-[0_0_20px_rgba(121,85,174,0.35)] group-hover:scale-105 transition bg-[#7955AE] flex-shrink-0" style={{ width: '36px', height: '36px', minWidth: '36px', minHeight: '36px' }}>
+            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" width="36" height="36" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div>
             <div className="font-cinzel font-black text-lg tracking-wider text-[#180B2B] dark:text-[#FFFFFF] group-hover:text-[#7955AE] dark:group-hover:text-[#D9CCF2] transition">
@@ -171,6 +171,9 @@ export function Navbar() {
                 src="/icon.svg.jpeg" 
                 alt="App Logo" 
                 className="w-5 h-5 rounded-md object-cover shadow-sm ring-1 ring-white/50 group-hover:rotate-6 transition-transform flex-shrink-0" 
+                width="20"
+                height="20"
+                style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', objectFit: 'cover' }}
               />
               <span className="font-bold tracking-tight">
                 {isLocalhost ? 'Install Localhost' : 'Install App'}
@@ -346,6 +349,9 @@ export function Navbar() {
                     src="/icon.svg.jpeg" 
                     alt="Logo" 
                     className="w-6 h-6 rounded-lg object-cover ring-1 ring-white/60 shadow flex-shrink-0" 
+                    width="24"
+                    height="24"
+                    style={{ width: '24px', height: '24px', minWidth: '24px', minHeight: '24px', objectFit: 'cover' }}
                   />
                   <span>{isLocalhost ? 'Install Localhost App' : 'Install Karma-Path App'}</span>
                   <FaDownload className="animate-bounce text-amber-300 text-[11px]" />

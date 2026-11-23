@@ -1,11 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 // @ts-ignore - Suppresses the TS error until the package is fully installed by the build environment
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    tailwindcss(),
     react(),
     VitePWA({
       registerType: 'autoUpdate',

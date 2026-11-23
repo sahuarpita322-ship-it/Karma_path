@@ -75,7 +75,7 @@ export const CulturalOdishaShowcase: React.FC = () => {
 
         <h2 className="text-3xl sm:text-5xl font-cinzel font-black tracking-tight text-[#180B2B] dark:text-white leading-tight">
           Living Soul of Odisha:{' '}
-          <span className="bg-gradient-to-r from-[#7955AE] via-[#9370D8] to-[#503C6B] dark:from-white dark:via-[#D9CCF2] dark:to-[#B9A5DF] bg-clip-text text-transparent font-serif italic">
+          <span className="text-[#5B21B6] dark:text-[#E0D2FE] font-serif italic font-extrabold drop-shadow-sm">
             Dance, Music & Festivals
           </span>
         </h2>

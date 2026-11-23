@@ -47,29 +47,29 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onSearch }) => {
   return (
     <section 
       onMouseMove={handleMouseMove}
-      className="relative min-h-[72vh] sm:min-h-[78vh] flex items-center justify-center overflow-hidden pb-10 sm:pb-14 pt-20 sm:pt-24"
+      className="relative min-h-[85vh] sm:min-h-screen w-full flex items-center justify-center overflow-hidden py-16 sm:py-24"
     >
       {/* =========================================================================
-          LAYER 0: MAJESTIC SHREE JAGANNATH TEMPLE PURI FULL-BLEED BACKGROUND
+          LAYER 0: MAJESTIC SHREE JAGANNATH TEMPLE PURI FULL-SCREEN BACKGROUND
           With Authentic Sunset Hues, Nilachakra Flag & Temple Shikharas
           ========================================================================= */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
           src="/puri.jpg"
           alt="Shree Jagannath Temple, Puri, Odisha"
-          className="w-full h-full object-cover object-center transition-transform duration-1000 ease-out scale-105"
+          className="w-full h-full object-cover object-[center_35%] transition-transform duration-1000 ease-out scale-105"
           style={{
             transform: `scale(1.05) translate3d(${mousePos.x * -6}px, ${mousePos.y * -4}px, 0)`,
           }}
         />
 
         {/* Ambient Dark Atmospheric Gradient: Keeps Temple Gloriously Visible */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#180B2B] via-[#180B2B]/45 to-[#180B2B]/25 dark:block hidden" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#180B2B] via-[#180B2B]/40 to-[#180B2B]/20 dark:block hidden" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#180B2B]/40 via-transparent to-[#180B2B] dark:block hidden" />
 
-        {/* Ambient Light Mode Gradient: Warm Ethereal Lavender Haze */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8FC] via-[#FAF8FC]/50 to-[#FAF8FC]/15 dark:hidden block" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-[#FAF8FC] dark:hidden block" />
+        {/* Ambient Light Mode Gradient: Warm Ethereal Sunset Haze */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8FC]/80 via-transparent to-black/20 dark:hidden block" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-[#FAF8FC]/80 dark:hidden block" />
       </div>
 
       {/* =========================================================================
@@ -98,79 +98,81 @@ export const HeroCinematic: React.FC<HeroCinematicProps> = ({ onSearch }) => {
       </div>
 
       {/* =========================================================================
-          LAYER 2: HERO EDITORIAL CONTENT & AI SEARCH INTERACTION
+          LAYER 2: HERO EDITORIAL CONTENT IN ELEGANT GLASSMORPHISM CARD
           ========================================================================= */}
       <div 
-        className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 pt-6 sm:pt-10"
+        className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6"
         style={{
-          transform: `translate3d(${mousePos.x * 5}px, ${mousePos.y * 3}px, 0)`,
+          transform: `translate3d(${mousePos.x * 4}px, ${mousePos.y * 3}px, 0)`,
           transition: 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
-        
-        {/* Floating Purpose-Driven Mission Badge */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] bg-white/95 text-[#200D38] border border-[#7955AE]/30 dark:bg-[#1E0E34]/90 dark:text-[#E8E3F0] dark:border-[#B9A5DF]/40 backdrop-blur-2xl shadow-xl">
-          <span className="w-2 h-2 rounded-full bg-[#7955AE] dark:bg-[#B9A5DF] animate-ping" />
-          <span>Karma-Path · Travel with Purpose · Empower Local Odisha</span>
-        </div>
-
-        {/* Main Editorial Heading */}
-        <div className="space-y-3">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-cinzel font-black tracking-tight text-[#180B2B] dark:text-[#FFFFFF] leading-[1.08] drop-shadow-xl">
-            Discover Odisha.{' '}
-            <span className="bg-gradient-to-r from-[#7955AE] via-[#9370D8] to-[#503C6B] dark:from-[#FFFFFF] dark:via-[#D9CCF2] dark:to-[#B9A5DF] bg-clip-text text-transparent font-serif italic block sm:inline">
-              Empower Its Soul.
-            </span>
-          </h1>
-
-          <p className="text-base sm:text-xl text-[#3A1F5E] dark:text-[#EDE6F8] font-serif italic max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            Do good deeds. Elevate master handloom weavers and artisans. Experience living sacred traditions and travel with lasting purpose.
-          </p>
-        </div>
-
-        {/* Glassmorphic Search Bar */}
-        <form 
-          onSubmit={handleSearchSubmit}
-          className="max-w-2xl mx-auto relative group"
-        >
-          <div className="relative flex items-center rounded-2xl bg-white/95 dark:bg-[#1E0E34]/90 border border-[#7955AE]/30 dark:border-[#B9A5DF]/40 p-2 shadow-2xl backdrop-blur-2xl group-hover:border-[#7955AE] dark:group-hover:border-white transition-all duration-300">
-            <div className="pl-4 pr-3 text-[#7955AE] dark:text-[#B9A5DF]">
-              <FaSearch size={18} />
-            </div>
-
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search Jagannath Puri, Sambalpuri Ikat, Raghurajpur, Odissi..."
-              className="w-full bg-transparent border-none text-xs sm:text-sm font-medium text-[#180B2B] dark:text-white placeholder-[#716680] dark:placeholder-[#B9A5DF]/70 focus:outline-none"
-            />
-
-            <button
-              type="submit"
-              className="px-5 py-2.5 rounded-xl font-cinzel font-bold text-xs uppercase tracking-wider transition-all duration-300 bg-[#7955AE] text-white hover:bg-[#613A9E] shadow-md shadow-purple-500/25 dark:bg-white dark:text-[#180B2B] dark:hover:bg-[#E8E3F0]"
-            >
-              Explore
-            </button>
+        <div className="rounded-3xl bg-white/80 dark:bg-[#180B2B]/80 backdrop-blur-2xl border border-white/80 dark:border-white/15 shadow-[0_20px_60px_-15px_rgba(24,11,43,0.35)] dark:shadow-[0_25px_65px_-15px_rgba(0,0,0,0.85)] p-6 sm:p-10 md:p-12 text-center space-y-6">
+          
+          {/* Floating Purpose-Driven Mission Badge */}
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] bg-[#7955AE]/15 text-[#5B21B6] border border-[#7955AE]/30 dark:bg-white/10 dark:text-[#E8E3F0] dark:border-white/20 backdrop-blur-md shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-[#7955AE] dark:bg-[#B9A5DF] animate-ping" />
+            <span>Karma-Path · Travel with Purpose · Empower Local Odisha</span>
           </div>
-        </form>
 
-        {/* Quick Discovery Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2 pt-1 max-w-3xl mx-auto">
-          <span className="text-xs font-semibold text-[#503C6B] dark:text-[#D9CCF2] mr-1 hidden sm:inline">
-            Popular:
-          </span>
-          {popularPills.map((pill, i) => (
-            <button
-              key={i}
-              onClick={() => navigate(pill.to)}
-              className="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all duration-300 bg-white/85 dark:bg-[#1E0E34]/80 text-[#200D38] dark:text-[#E8E3F0] border border-[#7955AE]/20 dark:border-[#B9A5DF]/30 hover:border-[#7955AE] dark:hover:border-white hover:scale-105 shadow-sm"
-            >
-              {pill.label}
-            </button>
-          ))}
+          {/* Main Editorial Heading */}
+          <div className="space-y-3">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-cinzel font-black tracking-tight text-[#180B2B] dark:text-[#FFFFFF] leading-[1.12]">
+              Discover Odisha.{' '}
+              <span className="text-[#5B21B6] dark:text-[#DDD1F8] font-serif italic block sm:inline font-extrabold drop-shadow-sm">
+                Empower Its Soul.
+              </span>
+            </h1>
+
+            <p className="text-sm sm:text-base lg:text-lg text-stone-700 dark:text-[#EDE6F8] font-serif italic max-w-2xl mx-auto leading-relaxed">
+              Do good deeds. Elevate master handloom weavers and artisans. Experience living sacred traditions and travel with lasting purpose.
+            </p>
+          </div>
+
+          {/* Glassmorphic Search Bar */}
+          <form 
+            onSubmit={handleSearchSubmit}
+            className="max-w-2xl mx-auto relative group"
+          >
+            <div className="relative flex items-center rounded-2xl bg-white/95 dark:bg-[#1E0E34]/95 border border-[#7955AE]/30 dark:border-[#B9A5DF]/40 p-2 shadow-xl backdrop-blur-xl group-hover:border-[#7955AE] dark:group-hover:border-white transition-all duration-300">
+              <div className="pl-4 pr-3 text-[#7955AE] dark:text-[#B9A5DF]">
+                <FaSearch size={18} />
+              </div>
+
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search Jagannath Puri, Sambalpuri Ikat, Raghurajpur, Odissi..."
+                className="w-full bg-transparent border-none text-xs sm:text-sm font-medium text-[#180B2B] dark:text-white placeholder-[#716680] dark:placeholder-[#B9A5DF]/70 focus:outline-none"
+              />
+
+              <button
+                type="submit"
+                className="px-5 py-2.5 rounded-xl font-cinzel font-bold text-xs uppercase tracking-wider transition-all duration-300 bg-[#7955AE] text-white hover:bg-[#613A9E] shadow-md shadow-purple-500/25 dark:bg-white dark:text-[#180B2B] dark:hover:bg-[#E8E3F0]"
+              >
+                Explore
+              </button>
+            </div>
+          </form>
+
+          {/* Quick Discovery Pills */}
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-1 max-w-3xl mx-auto">
+            <span className="text-xs font-semibold text-[#503C6B] dark:text-[#D9CCF2] mr-1 hidden sm:inline">
+              Popular:
+            </span>
+            {popularPills.map((pill, i) => (
+              <button
+                key={i}
+                onClick={() => navigate(pill.to)}
+                className="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all duration-300 bg-[#7955AE]/10 dark:bg-white/10 text-[#301B4E] dark:text-[#E8E3F0] border border-[#7955AE]/20 dark:border-white/20 hover:border-[#7955AE] dark:hover:border-white hover:scale-105 shadow-sm"
+              >
+                {pill.label}
+              </button>
+            ))}
+          </div>
+
         </div>
-
       </div>
 
     </section>

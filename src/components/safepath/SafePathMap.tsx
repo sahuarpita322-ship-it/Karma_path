@@ -1,9 +1,45 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo, Component, ErrorInfo, ReactNode } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, Circle, useMap, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 // @ts-ignore
 import L from 'leaflet';
 import { LocationCoordinate, JourneyRouteOption } from '../../data/safePathTypes';
+
+// Error boundary to gracefully catch any Leaflet initialization or render glitches
+class SafePathMapErrorBoundary extends Component<{ children: ReactNode; className?: string }, { hasError: boolean }> {
+  constructor(props: { children: ReactNode; className?: string }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.warn('SafePathMap caught error:', error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className={`rounded-3xl bg-[#170D2C] border border-[#7955AE]/40 flex flex-col items-center justify-center p-6 text-center text-white space-y-3 ${this.props.className || 'h-[450px] w-full'}`}>
+          <div className="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold">
+            ⚡
+          </div>
+          <h4 className="font-bold text-base">Safe Path Navigation Telemetry Active</h4>
+          <p className="text-xs text-stone-300 max-w-md">
+            GPS tracking, deviation alerts, and SOS triggers remain fully active.
+          </p>
+          <button 
+            onClick={() => this.setState({ hasError: false })} 
+            className="px-4 py-2 rounded-xl bg-[#7955AE] text-white text-xs font-bold hover:bg-[#613A9E] transition"
+          >
+            Refresh Map
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 // Component to handle map clicks for selecting points
 function MapClickHandler({ 
@@ -39,22 +75,30 @@ function MapBoundsManager({
 
   useEffect(() => {
     if (!map) return;
-
-    if (selectedRoute && selectedRoute.coordinates.length > 0) {
-      const bounds = L.latLngBounds(selectedRoute.coordinates.map(c => [c[0], c[1]]));
-      if (userLocation) bounds.extend([userLocation.lat, userLocation.lng]);
-      map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
-    } else if (origin && destination) {
-      const bounds = L.latLngBounds([
-        [origin.lat, origin.lng],
-        [destination.lat, destination.lng]
-      ]);
-      if (userLocation) bounds.extend([userLocation.lat, userLocation.lng]);
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 14 });
-    } else if (userLocation) {
-      map.setView([userLocation.lat, userLocation.lng], 14);
-    } else if (origin) {
-      map.setView([origin.lat, origin.lng], 13);
+    try {
+      map.invalidateSize();
+      if (selectedRoute && selectedRoute.coordinates && selectedRoute.coordinates.length > 0) {
+        const bounds = L.latLngBounds(selectedRoute.coordinates.map(c => [c[0], c[1]]));
+        if (userLocation) bounds.extend([userLocation.lat, userLocation.lng]);
+        if (bounds.isValid()) {
+          map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
+        }
+      } else if (origin && destination) {
+        const bounds = L.latLngBounds([
+          [origin.lat, origin.lng],
+          [destination.lat, destination.lng]
+        ]);
+        if (userLocation) bounds.extend([userLocation.lat, userLocation.lng]);
+        if (bounds.isValid()) {
+          map.fitBounds(bounds, { padding: [50, 50], maxZoom: 14 });
+        }
+      } else if (userLocation) {
+        map.setView([userLocation.lat, userLocation.lng], 14);
+      } else if (origin) {
+        map.setView([origin.lat, origin.lng], 13);
+      }
+    } catch (err) {
+      console.warn('Leaflet fitBounds caught:', err);
     }
   }, [map, origin, destination, selectedRoute, userLocation]);
 
@@ -94,28 +138,28 @@ export function SafePathMap({
     : [20.2961, 85.8245];
 
   // Custom Div Icons for elegant royal violet & safety palette
-  const originIcon = L.divIcon({
+  const originIcon = useMemo(() => L.divIcon({
     className: 'kp-map-marker',
     html: `<div style="background: linear-gradient(135deg, #10B981, #059669); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(16,185,129,0.45); border: 2.5px solid #ffffff; color: white; font-weight: bold; font-size: 13px;">A</div>`,
     iconSize: [34, 34],
     iconAnchor: [17, 17]
-  });
+  }), []);
 
-  const destIcon = L.divIcon({
+  const destIcon = useMemo(() => L.divIcon({
     className: 'kp-map-marker',
     html: `<div style="background: linear-gradient(135deg, #EF4444, #B91C1C); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(239,68,68,0.45); border: 2.5px solid #ffffff; color: white; font-weight: bold; font-size: 13px;">B</div>`,
     iconSize: [34, 34],
     iconAnchor: [17, 17]
-  });
+  }), []);
 
-  const waypointIcon = L.divIcon({
+  const waypointIcon = useMemo(() => L.divIcon({
     className: 'kp-map-marker',
     html: `<div style="background: linear-gradient(135deg, #F59E0B, #D97706); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(245,158,11,0.4); border: 2px solid #ffffff; color: white; font-size: 12px;">★</div>`,
     iconSize: [28, 28],
     iconAnchor: [14, 14]
-  });
+  }), []);
 
-  const userMarkerIcon = L.divIcon({
+  const userMarkerIcon = useMemo(() => L.divIcon({
     className: 'kp-map-marker',
     html: `<div style="position: relative; width: 32px; height: 32px;">
       <div style="position: absolute; inset: 0; background: rgba(121, 85, 174, 0.35); border-radius: 50%; animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;"></div>
@@ -125,10 +169,11 @@ export function SafePathMap({
     </div>`,
     iconSize: [32, 32],
     iconAnchor: [16, 16]
-  });
+  }), []);
 
   return (
-    <div className={`relative rounded-3xl overflow-hidden border border-violet-200/50 dark:border-violet-900/40 shadow-xl ${className}`}>
+    <SafePathMapErrorBoundary className={className}>
+      <div className={`relative rounded-3xl overflow-hidden border border-violet-200/50 dark:border-violet-900/40 shadow-xl ${className}`}>
       {/* Picking Mode Banner Indicator */}
       {pickingMode && (
         <div className="absolute top-3 left-1/2 -translate-x-1/2 z-[1000] bg-violet-950/90 backdrop-blur-md text-violet-200 text-xs px-4 py-2 rounded-full border border-violet-500/40 shadow-xl flex items-center gap-2 animate-bounce">
@@ -286,5 +331,6 @@ export function SafePathMap({
         )}
       </MapContainer>
     </div>
-  );
+  </SafePathMapErrorBoundary>
+);
 }

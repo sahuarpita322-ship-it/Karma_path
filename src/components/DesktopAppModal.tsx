@@ -34,8 +34,8 @@ export function DesktopAppModal({
 
         {/* Header with App Logo */}
         <div className="flex items-center gap-4">
-          <div className="relative w-14 h-14 rounded-2xl overflow-hidden shadow-lg border-2 border-amber-400/50 flex-shrink-0 bg-[#7955AE]">
-            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" />
+          <div className="relative w-14 h-14 rounded-2xl overflow-hidden shadow-lg border-2 border-amber-400/50 flex-shrink-0 bg-[#7955AE]" style={{ width: '56px', height: '56px', minWidth: '56px', minHeight: '56px' }}>
+            <img src="/icon.svg.jpeg" alt="Karma-Path Logo" className="w-full h-full object-cover" width="56" height="56" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
@@ -69,7 +69,7 @@ export function DesktopAppModal({
               }}
               className="w-full sm:w-auto px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-[#7955AE] text-white font-bold text-xs shadow-md hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2 flex-shrink-0 border border-amber-300/40"
             >
-              <img src="/icon.svg.jpeg" alt="Logo" className="w-5 h-5 rounded-md object-cover ring-1 ring-white/60 shadow-sm" />
+              <img src="/icon.svg.jpeg" alt="Logo" className="w-5 h-5 rounded-md object-cover ring-1 ring-white/60 shadow-sm" width="20" height="20" style={{ width: '20px', height: '20px', minWidth: '20px', minHeight: '20px', objectFit: 'cover' }} />
               <span>Install to Desktop</span>
               <FaDownload size={11} className="animate-bounce ml-0.5 text-amber-300" />
             </button>
