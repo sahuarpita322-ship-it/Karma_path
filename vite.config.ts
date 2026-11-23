@@ -10,18 +10,21 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024
+        maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp,webmanifest,json}'],
+        navigateFallback: '/index.html'
       },
       devOptions: {
-        enabled: false
+        enabled: true
       },
       manifest: {
-        name: 'Karma-Path | Responsible Tourism',
+        name: 'Karma-Path | Discover Odisha. Experience Its Soul.',
         short_name: 'Karma-Path',
-        description: 'Responsible Tourism App',
-        theme_color: '#16a34a',
-        background_color: '#ffffff',
+        description: 'Complete Offline & Desktop Heritage & Safe Travel Platform for Odisha',
+        theme_color: '#180B2B',
+        background_color: '#180B2B',
         display: 'standalone',
+        orientation: 'any',
         start_url: '/',
         icons: [
           {

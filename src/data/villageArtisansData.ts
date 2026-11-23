@@ -61,7 +61,7 @@ export const VERIFIED_VILLAGE_ARTISANS: VillageArtisan[] = [
     craft: 'GI-Tagged Berhampuri Patta Silk Weaving',
     yearsOfExperience: 38,
     awards: ['National Merit Award (Handloom)', 'State Master Weaver Honour'],
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    photo: '/culture-grid.jpg',
     story: 'Born into the traditional Devanga weaver lineage of Ganjam, Master Mohan Rao has preserved the intricate Phoda Kumbha (interlocked temple spire) double-warp technique on pit looms for over 38 years. His family supplies the sacred silk Joda robes worn by deities during major temple car festivals.',
     speciality: 'Heavy mulberry silk sarees with 100% pure zari and traditional temple spire borders.',
     verified: true,
@@ -76,7 +76,7 @@ export const VERIFIED_VILLAGE_ARTISANS: VillageArtisan[] = [
     craft: 'Belaguntha Flexible Brass Fish (Pitala Machha)',
     yearsOfExperience: 35,
     awards: ['National Handicrafts Award', 'Odisha Shilpi Samman'],
-    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    photo: '/culture-grid.jpg',
     story: 'Master Kailash is among the few surviving master sculptors of the 200-year-old Belaguntha brass fish craft. Without a single drop of solder or welding, he meticulously rivets dozens of paper-thin interlocking brass scales so the fish wiggles with organic fluidity when suspended.',
     speciality: 'Metamorphic kinetic brass sculpture and traditional temple lamps.',
     verified: true,
@@ -91,7 +91,7 @@ export const VERIFIED_VILLAGE_ARTISANS: VillageArtisan[] = [
     craft: 'Pattachitra & Palm-Leaf Stylus Engraving',
     yearsOfExperience: 42,
     awards: ['National Heritage Master Craftsman', 'Rashtrapati Puraskar Nominee'],
-    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+    photo: '/culture-grid.jpg',
     story: 'Carrying forward an uninterrupted 5-generation lineage in Raghurajpur, Guru Rabindra prepares his own organic pigments from crushed river rocks, conch shells, and tamarind glue. He has trained over 120 village youth in ancient mythological scroll painting.',
     speciality: 'Mythological Dasavatara and Krishna Leela paintings on canvas and dried palm leaves.',
     verified: true,
@@ -106,7 +106,7 @@ export const VERIFIED_VILLAGE_ARTISANS: VillageArtisan[] = [
     craft: 'Khandua Pata Gitagovinda Silk Weaving',
     yearsOfExperience: 40,
     awards: ['State Handloom Ratna', 'Utkal Weaving Excellence Award'],
-    photo: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
+    photo: '/culture-grid.jpg',
     story: 'Weaving in Nuapatna since age 14, Kishori Meher specializes in weaving complete Sanskrit verses of Jayadeva’s Gita Govinda directly into the warp threads of Khandua Pata silk, a tradition revered in the Puri Jagannath temple since the 12th century.',
     speciality: 'Tie-and-dye calligraphic Sanskrit border sarees in natural lac red and turmeric yellow.',
     verified: true,
@@ -121,7 +121,7 @@ export const VERIFIED_VILLAGE_ARTISANS: VillageArtisan[] = [
     craft: 'Aal-Tree Organic Dyed Tribal Handloom',
     yearsOfExperience: 30,
     awards: ['Tribal Craft Preservation Fellow', 'UNDP Rural Artisan Pioneer'],
-    photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80',
+    photo: '/culture-grid.jpg',
     story: 'Sukri leads a cooperative of 24 tribal women in Kotpad who forage wild Aal tree root bark from the Nabarangpur-Koraput forests. The roots undergo a sacred 20-day natural dyeing cycle with castor oil and wood ash before being woven on unmotorized frame looms.',
     speciality: 'Heavy, breathable organic cotton shawls and dupattas with ancestral crab and fish motifs.',
     verified: true,
@@ -136,7 +136,7 @@ export const VERIFIED_VILLAGE_ARTISANS: VillageArtisan[] = [
     craft: 'Lost-Wax Dhokra Metal Casting',
     yearsOfExperience: 28,
     awards: ['National Tribal Arts Award'],
-    photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    photo: '/culture-grid.jpg',
     story: 'Living in the quiet forest village of Sadeibareni, Mangaraj utilizes ancient beeswax wire modeling and clay molds to cast one-of-a-kind rustic brass figurines, preserving a technique continuous since the Mohenjo-daro Dancing Girl.',
     speciality: 'Primitive folk musicians, elephant howdahs, and tribal ritual diya lamps.',
     verified: true,
@@ -163,7 +163,7 @@ export const VERIFIED_VILLAGE_RECIPES: VillageRecipe[] = [
     preparationTime: '30 Minutes (plus 4 days sun-curing)',
     traditionalMethod: 'Whole desi mangoes are soaked in rock salt and turmeric, dried under the hot Ganjam sun on bamboo mats, then slow-cured in spiced mustard oil. Served alongside hand-crushed roasted badi chura with green chillies.',
     culturalImportance: 'A staple of Southern Odisha culinary heritage, famously paired with afternoon water rice (Pakhala) during hot summer days.',
-    photo: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80',
+    photo: '/culture-grid.jpg',
     contributor: 'Manorama Patro, Berhampur Women SHG'
   },
   {
@@ -184,7 +184,7 @@ export const VERIFIED_VILLAGE_RECIPES: VillageRecipe[] = [
     preparationTime: '45 Minutes',
     traditionalMethod: 'Rice is slow-simmered in earthen pots over woodfire until thick and creamy, sweetened with unrefined cane jaggery. Pakhala is seasoned with roasted cumin, green chillies, and fresh mint.',
     culturalImportance: 'Offered during community village feasts (Melana) and harvest celebrations across the Bhanjanagar valley.',
-    photo: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80',
+    photo: '/culture-grid.jpg',
     contributor: 'Bipin Bihari Maharana, Belaguntha'
   },
   {
@@ -204,7 +204,7 @@ export const VERIFIED_VILLAGE_RECIPES: VillageRecipe[] = [
     preparationTime: '2 Hours (slow bake)',
     traditionalMethod: 'Soft fresh chhena is kneaded by hand with cardamom and sugar, wrapped securely in triple layers of green Sal leaves, and slow-baked inside glowing cow-dung charcoal embers until caramelized with a dark crust.',
     culturalImportance: 'The quintessential sweet offering of coastal Odisha, beloved by temple devotees and artisan guests.',
-    photo: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80',
+    photo: '/culture-grid.jpg',
     contributor: 'Guru Rabindra, Raghurajpur'
   },
   {
@@ -223,7 +223,7 @@ export const VERIFIED_VILLAGE_RECIPES: VillageRecipe[] = [
     preparationTime: '25 Minutes',
     traditionalMethod: 'Ragi flour is whisked with fermented water, brought to a gentle simmer in a mud handi until velvety, and cooled before mixing with churned village curd.',
     culturalImportance: 'Ancient superfood providing cooling endurance to tribal weavers and farmers working under the tropical sun.',
-    photo: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80',
+    photo: '/culture-grid.jpg',
     contributor: 'Sukri Mirgan, Kotpad'
   }
 ];
@@ -258,7 +258,7 @@ export const VERIFIED_VILLAGE_EXPERIENCES: VillageTourismExperience[] = [
       'Photography permitted with artisan consent.',
       'Advance booking required 24 hours prior.'
     ],
-    photo: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+    photo: '/culture-grid.jpg',
     verified: true
   },
   {
@@ -288,7 +288,7 @@ export const VERIFIED_VILLAGE_EXPERIENCES: VillageTourismExperience[] = [
       'Participants must wear closed-toe shoes.',
       'Suitable for adults and children aged 12+ under guidance.'
     ],
-    photo: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=80',
+    photo: '/culture-grid.jpg',
     verified: true
   },
   {
@@ -318,7 +318,7 @@ export const VERIFIED_VILLAGE_EXPERIENCES: VillageTourismExperience[] = [
       'Art materials wash off easily with water.',
       'Respect silence during Gotipua dance training.'
     ],
-    photo: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80',
+    photo: '/culture-grid.jpg',
     verified: true
   }
 ];

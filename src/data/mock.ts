@@ -6,9 +6,9 @@ export const stats = {
 };
 
 export const culturalLocations = [
-  { id: 'l1', name: 'Konark Sun Temple', region: 'Odisha', description: '13th-century Sun Temple, UNESCO world heritage.', image: 'https://images.pexels.com/photos/161963/sun-temple-konark-odisha-india-161963.jpeg', place: 'Konark' },
-  { id: 'l2', name: 'Jagannath Temple Puri', region: 'Odisha', description: 'Famous pilgrimage temple and Rath Yatra.', image: 'https://images.pexels.com/photos/5193403/pexels-photo-5193403.jpeg', place: 'Puri' },
-  { id: 'l3', name: 'Chilika Lake', region: 'Odisha', description: 'Asia\'s largest brackish water lagoon.', image: 'https://images.pexels.com/photos/1628563/pexels-photo-1628563.jpeg', place: 'Chilika' }
+  { id: 'l1', name: 'Konark Sun Temple', region: 'Odisha', description: '13th-century Sun Temple, UNESCO world heritage.', image: '/konark.jpg', place: 'Konark' },
+  { id: 'l2', name: 'Jagannath Temple Puri', region: 'Odisha', description: 'Famous pilgrimage temple and Rath Yatra.', image: '/culture-grid.jpg', place: 'Puri' },
+  { id: 'l3', name: 'Chilika Lake', region: 'Odisha', description: 'Asia\'s largest brackish water lagoon.', image: '/culture-grid.jpg', place: 'Chilika' }
 ];
 
 export type Artifact = {
@@ -24,48 +24,48 @@ export type Artifact = {
 
 export const artifacts: Artifact[] = [
   { id: 'm1', name: 'Konark Sun Temple Sculpture', category: 'Temple sculptures', year: '1255', location: 'Konark', image: '/konark.jpg', text: 'Sun temple stone carving with chariot wheels.', embedUrl: 'https://sketchfab.com/models/6cc905be2ae34e8091eb1eaa84a17738/embed' },
-  { id: 'm2', name: 'Tribal Jewelry Set', category: 'Tribal jewelry', year: '1800s', location: 'Odisha', image: 'https://i.etsystatic.com/16212113/r/il/289a8b/4433165196/il_1080xN.4433165196_to4p.jpg', text: 'Ornate tribal necklace from eastern India.', embedUrl: 'https://sketchfab.com/models/144a04dafa4d474e818659fcf20989fa/embed' },
-  { id: 'm3', name: 'Traditional Musical Instrument', category: 'Musical instruments', year: '1900', location: 'Chhattisgarh', image: 'https://thumbs.dreamstime.com/b/beautifully-arranged-collection-traditional-musical-instruments-various-cultures-regions-display-includes-340616569.jpg', text: 'Wooden flute and percussion set.', embedUrl: 'https://sketchfab.com/models/7e11e4dd99f34facab955d45aba4b074/embed' },
-  { id: 'm4', name: 'Khajuraho Stone Sculpture', category: 'Temple sculptures', year: '950', location: 'Madhya Pradesh', image: 'https://static.vecteezy.com/system/resources/previews/042/561/447/large_2x/famous-sculptures-of-khajuraho-temples-india-photo.jpg', text: 'Intricate narrative panel from Khajuraho.', embedUrl: 'https://sketchfab.com/models/c59d57d280de458f9603e2730aa5c00d/embed' },
-  { id: 'm5', name: 'Mysore Royal Dagger', category: 'Traditional weapons', year: '1800', location: 'Karnataka', image: 'https://img.freepik.com/premium-photo/sword-with-dragon-it-is-shown-picture_869640-221276.jpg', text: 'Gold-inlaid ceremonial dagger used by royalty.', embedUrl: 'https://sketchfab.com/models/1d5177709d224e1c91a458036bc11710/embed' },
-  { id: 'm6', name: 'Tanjore Painting', category: 'Folk art', year: '1800s', location: 'Tamil Nadu', image: 'https://img1.wsimg.com/isteam/ip/bd95d888-15fd-4e22-9514-3b3e7856faa7/d1fc0d4d-12eb-4019-a7aa-f00566d84891.jpg', text: 'Classical Tanjore painting with gold foil.', embedUrl: 'https://studio.tripo3d.ai/embed/8253cb39-6add-4809-8137-b3e5e725300f' },
-  { id: 'm7', name: 'Mughal Architecture Embellishment', category: 'Architecture', year: '1600', location: 'Delhi', image: 'https://live.staticflickr.com/8190/8449126291_0f79d5464c_b.jpg', text: 'Intricate architectural details from the Mughal era.', embedUrl: 'https://sketchfab.com/models/690a33a81d2d44ce99c6bfcb0fab8f7a/embed' },
-  { id: 'm8', name: 'Chola Bronze Nataraja', category: 'Temple sculptures', year: '1100', location: 'Tamil Nadu', image: 'https://th.bing.com/th/id/R.bddc02a3da6c89a5c2240af735a8253e?rik=pI50u9we0FhY5g&riu=http%3a%2f%2fwww.jayarts.com%2fcdn%2fshop%2fproducts%2fDSF0415_1200x1200.jpg%3fv%3d1647007616&ehk=CBUn42mK0HTR5HiUs4ohNXHizjBWH7R5emqnSQnYIKU%3d&risl=&pid=ImgRaw&r=0', text: 'Dancing Shiva from Chola period.', embedUrl: 'https://sketchfab.com/models/77bb4116fc134fbf96e0f52403bff7d5/embed' },
-  { id: 'm9', name: 'Pattachitra Panel', category: 'Folk art', year: '1700', location: 'Odisha', image: 'https://www.crafttrip.in/image/cache/catalog/jagannath/005-Jagannath-Painting-on-canvas-Indian-Folk-Art-Painting--1000x1000w.jpg', text: 'Colorful religious painting on cloth.', embedUrl: 'https://sketchfab.com/models/fc3b659020894fb78a9137a00bf6b700/embed' },
-  { id: 'm10', name: 'Ancient Hindu Temple', category: 'Architecture', year: 'Ancient', location: 'India', image: 'https://www.mytownblog.com/wp-content/uploads/2025/03/Asclique-Featured-Image-17-2.png', text: 'A detailed 3D model of an ancient Hindu temple.', embedUrl: 'https://sketchfab.com/models/45fa803f2a10428183179c860c330a8a/embed' },
-  { id: 'm11', name: 'Indian Heritage Landmarks', category: 'Architecture', year: 'Various', location: 'India', image: 'https://travel2next.com/wp-content/uploads/LANDMARKS-IN-INDIA.jpg', text: 'A collection of iconic Indian heritage landmarks in 3D.', embedUrl: 'https://sketchfab.com/models/c168371aaffa4c8294bc0da426d0018a/embed' },
-  { id: 'm12', name: 'Rajasthani Turban', category: 'Textile', year: '1800', location: 'Rajasthan', image: 'https://i.etsystatic.com/20406834/r/il/69e32d/4286362059/il_1080xN.4286362059_3pb2.jpg', text: 'Colorful turban representing identity.', embedUrl: 'https://sketchfab.com/models/41ecec5688dc4c0b87bc2f8bb6414156/embed' },
-  { id: 'm13', name: 'Bamboo Basket', category: 'Crafts', year: '1980', location: 'North East', image: 'https://png.pngtree.com/background/20230527/original/pngtree-3d-model-of-bamboo-baskets-and-baskets-picture-image_2754150.jpg', text: 'Traditional handwoven basket.', embedUrl: 'https://sketchfab.com/models/33e8a5acbc204fec95da167b38516d07/embed' },
+  { id: 'm2', name: 'Tribal Jewelry Set', category: 'Tribal jewelry', year: '1800s', location: 'Odisha', image: '/culture-grid.jpg', text: 'Ornate tribal necklace from eastern India.', embedUrl: 'https://sketchfab.com/models/144a04dafa4d474e818659fcf20989fa/embed' },
+  { id: 'm3', name: 'Traditional Musical Instrument', category: 'Musical instruments', year: '1900', location: 'Chhattisgarh', image: '/music/classical-music.jpg', text: 'Wooden flute and percussion set.', embedUrl: 'https://sketchfab.com/models/7e11e4dd99f34facab955d45aba4b074/embed' },
+  { id: 'm4', name: 'Khajuraho Stone Sculpture', category: 'Temple sculptures', year: '950', location: 'Madhya Pradesh', image: '/bhubaneswar.jpg', text: 'Intricate narrative panel from Khajuraho.', embedUrl: 'https://sketchfab.com/models/c59d57d280de458f9603e2730aa5c00d/embed' },
+  { id: 'm5', name: 'Mysore Royal Dagger', category: 'Traditional weapons', year: '1800', location: 'Karnataka', image: '/culture-grid.jpg', text: 'Gold-inlaid ceremonial dagger used by royalty.', embedUrl: 'https://sketchfab.com/models/1d5177709d224e1c91a458036bc11710/embed' },
+  { id: 'm6', name: 'Tanjore Painting', category: 'Folk art', year: '1800s', location: 'Tamil Nadu', image: '/culture-grid.jpg', text: 'Classical Tanjore painting with gold foil.', embedUrl: 'https://studio.tripo3d.ai/embed/8253cb39-6add-4809-8137-b3e5e725300f' },
+  { id: 'm7', name: 'Mughal Architecture Embellishment', category: 'Architecture', year: '1600', location: 'Delhi', image: '/culture-grid.jpg', text: 'Intricate architectural details from the Mughal era.', embedUrl: 'https://sketchfab.com/models/690a33a81d2d44ce99c6bfcb0fab8f7a/embed' },
+  { id: 'm8', name: 'Chola Bronze Nataraja', category: 'Temple sculptures', year: '1100', location: 'Tamil Nadu', image: '/culture-grid.jpg', text: 'Dancing Shiva from Chola period.', embedUrl: 'https://sketchfab.com/models/77bb4116fc134fbf96e0f52403bff7d5/embed' },
+  { id: 'm9', name: 'Pattachitra Panel', category: 'Folk art', year: '1700', location: 'Odisha', image: '/puri.jpg', text: 'Colorful religious painting on cloth.', embedUrl: 'https://sketchfab.com/models/fc3b659020894fb78a9137a00bf6b700/embed' },
+  { id: 'm10', name: 'Ancient Hindu Temple', category: 'Architecture', year: 'Ancient', location: 'India', image: '/culture-grid.jpg', text: 'A detailed 3D model of an ancient Hindu temple.', embedUrl: 'https://sketchfab.com/models/45fa803f2a10428183179c860c330a8a/embed' },
+  { id: 'm11', name: 'Indian Heritage Landmarks', category: 'Architecture', year: 'Various', location: 'India', image: '/culture-grid.jpg', text: 'A collection of iconic Indian heritage landmarks in 3D.', embedUrl: 'https://sketchfab.com/models/c168371aaffa4c8294bc0da426d0018a/embed' },
+  { id: 'm12', name: 'Rajasthani Turban', category: 'Textile', year: '1800', location: 'Rajasthan', image: '/culture-grid.jpg', text: 'Colorful turban representing identity.', embedUrl: 'https://sketchfab.com/models/41ecec5688dc4c0b87bc2f8bb6414156/embed' },
+  { id: 'm13', name: 'Bamboo Basket', category: 'Crafts', year: '1980', location: 'North East', image: '/doing-good-deeds.jpg', text: 'Traditional handwoven basket.', embedUrl: 'https://sketchfab.com/models/33e8a5acbc204fec95da167b38516d07/embed' },
   { id: 'm14', name: 'Kalamkari Textile', category: 'Fabric', year: '1700', location: 'Andhra Pradesh', image: 'https://tse4.mm.bing.net/th/id/OIP.j4mSubn_8FpwFd24prmqpwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3', text: 'Hand-painted cotton cloth.', embedUrl: 'https://sketchfab.com/models/2946bb1675074077bcd72a75b7fe1c2e/embed' },
   { id: 'm15', name: 'Warli Art Panel', category: 'Folk art', year: '1970', location: 'Maharashtra', image: 'https://miro.medium.com/v2/resize:fit:2000/1*uxVoDRfV506S-19jGiyUbg.jpeg', text: 'Monochrome tribal painting style.', embedUrl: 'https://sketchfab.com/models/5ebe30d594db4cb1af069b1506a094ad/embed' },
 
-  { id: 'm16', name: 'Naga Warrior Spear', category: 'Traditional weapons', year: '1850', location: 'Nagaland', image: 'https://i.pinimg.com/736x/b8/9b/27/b89b274390465f67a84962fd5536a187.jpg', text: 'Unmarked tribal spear from Naga community.', embedUrl: 'https://sketchfab.com/models/0bb6110ddb4a4185aa11c7f4bdbe4d7d/embed' },
+  { id: 'm16', name: 'Naga Warrior Spear', category: 'Traditional weapons', year: '1850', location: 'Nagaland', image: '/culture-grid.jpg', text: 'Unmarked tribal spear from Naga community.', embedUrl: 'https://sketchfab.com/models/0bb6110ddb4a4185aa11c7f4bdbe4d7d/embed' },
   { id: 'm17', name: 'Pashmina Shawl', category: 'Textile', year: '1900', location: 'Kashmir', image: 'https://tse1.explicit.bing.net/th/id/OIP.P735UhceL7rR4GCVavu6jgHaJ3?w=1588&h=2117&rs=1&pid=ImgDetMain&o=7&rm=3', text: 'Fine pashmina wool shawl.', embedUrl: 'https://sketchfab.com/models/350fc9b99a284553a643826133c524a5/embed' },
-  { id: 'm18', name: 'Bamboo Flute (Bansuri)', category: 'Musical instruments', year: '1800', location: 'All India', image: 'https://i.etsystatic.com/47139480/r/il/c0876d/5574511827/il_fullxfull.5574511827_36io.jpg', text: 'Classic Indian woodwind instrument.', embedUrl: 'https://sketchfab.com/models/dcac0f71cac24a7dba26b061141e226f/embed' },
-  { id: 'm19', name: 'Golden Brass Lamp', category: 'Metal craft', year: '1950', location: 'India', image: 'https://m.media-amazon.com/images/I/71CEjyjYrTL.jpg', text: 'An ornate traditional Indian brass lamp (diya), often used in religious ceremonies.', embedUrl: 'https://sketchfab.com/models/0032e769b35b40e0935b913d90256153/embed' }
+  { id: 'm18', name: 'Bamboo Flute (Bansuri)', category: 'Musical instruments', year: '1800', location: 'All India', image: '/culture-grid.jpg', text: 'Classic Indian woodwind instrument.', embedUrl: 'https://sketchfab.com/models/dcac0f71cac24a7dba26b061141e226f/embed' },
+  { id: 'm19', name: 'Golden Brass Lamp', category: 'Metal craft', year: '1950', location: 'India', image: '/culture-grid.jpg', text: 'An ornate traditional Indian brass lamp (diya), often used in religious ceremonies.', embedUrl: 'https://sketchfab.com/models/0032e769b35b40e0935b913d90256153/embed' }
 ]; 
 
 export const tourismPlaces = [
   { id: 't1', name: 'Konark Sun Temple', state: 'Odisha', category: 'Temple', highlight: 'UNESCO 13th C. Sun chariot architecture', image: '/konark.jpg' },
   { id: 't2', name: 'Jagannath Temple Puri', state: 'Odisha', category: 'Temple', highlight: 'Ratha Yatra divine shrine', image: '/puri.jpg' },
   { id: 't3', name: 'Chilika Lake', state: 'Odisha', category: 'Lagoon', highlight: 'Irrawaddy dolphins & migratory birds', image: '/chilika.jpg' },
-  { id: 't4', name: 'Dhauli Shanti Stupa', state: 'Odisha', category: 'Buddhist', highlight: 'Emperor Ashoka Kalinga peace edicts', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80' },
+  { id: 't4', name: 'Dhauli Shanti Stupa', state: 'Odisha', category: 'Buddhist', highlight: 'Emperor Ashoka Kalinga peace edicts', image: '/culture-grid.jpg' },
   { id: 't5', name: 'Lingaraj Temple Bhubaneswar', state: 'Odisha', category: 'Temple', highlight: '11th C. Kalinga temple architecture', image: '/bhubaneswar.jpg' },
-  { id: 't6', name: 'Similipal National Park', state: 'Odisha', category: 'Wildlife', highlight: 'UNESCO Biosphere tiger & elephant reserve', image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80' },
-  { id: 't7', name: 'Daringbadi Hill Station', state: 'Odisha', category: 'Hills', highlight: 'Kashmir of Odisha pine valleys', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80' },
-  { id: 't8', name: 'Bhitarkanika National Park', state: 'Odisha', category: 'Wildlife', highlight: 'Giant saltwater crocodiles & mangroves', image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80' },
-  { id: 't9', name: 'Gopalpur Beach', state: 'Odisha', category: 'Beach', highlight: 'Historic maritime port & golden sands', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80' },
-  { id: 't10', name: 'Chandipur Beach', state: 'Odisha', category: 'Beach', highlight: 'Unique hide-and-seek disappearing sea', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80' },
-  { id: 't11', name: 'Hirakud Dam', state: 'Odisha', category: 'Heritage', highlight: 'Longest earthen dam across Mahanadi', image: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80' },
-  { id: 't12', name: 'Deomali Hills', state: 'Odisha', category: 'Hills', highlight: 'Highest mountain peak in Koraput', image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80' },
-  { id: 't13', name: 'Raghurajpur Heritage Village', state: 'Odisha', category: 'Village', highlight: 'Pattachitra & Gotipua master artisans', image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80' },
-  { id: 't14', name: 'Pipili Applique Hamlet', state: 'Odisha', category: 'Village', highlight: 'Centuries-old Chandua cloth embroidery', image: 'https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?auto=format&fit=crop&w=800&q=80' },
-  { id: 't15', name: 'Ratnagiri Buddhist Complex', state: 'Odisha', category: 'Buddhist', highlight: 'Pushpagiri Mahavihara carved monastery gate', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80' },
-  { id: 't16', name: 'Tara Tarini Temple', state: 'Odisha', category: 'Temple', highlight: 'Sacred twin Goddess Shakti Peetha on Rushikulya', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80' },
+  { id: 't6', name: 'Similipal National Park', state: 'Odisha', category: 'Wildlife', highlight: 'UNESCO Biosphere tiger & elephant reserve', image: '/culture-grid.jpg' },
+  { id: 't7', name: 'Daringbadi Hill Station', state: 'Odisha', category: 'Hills', highlight: 'Kashmir of Odisha pine valleys', image: '/culture-grid.jpg' },
+  { id: 't8', name: 'Bhitarkanika National Park', state: 'Odisha', category: 'Wildlife', highlight: 'Giant saltwater crocodiles & mangroves', image: '/culture-grid.jpg' },
+  { id: 't9', name: 'Gopalpur Beach', state: 'Odisha', category: 'Beach', highlight: 'Historic maritime port & golden sands', image: '/culture-grid.jpg' },
+  { id: 't10', name: 'Chandipur Beach', state: 'Odisha', category: 'Beach', highlight: 'Unique hide-and-seek disappearing sea', image: '/culture-grid.jpg' },
+  { id: 't11', name: 'Hirakud Dam', state: 'Odisha', category: 'Heritage', highlight: 'Longest earthen dam across Mahanadi', image: '/culture-grid.jpg' },
+  { id: 't12', name: 'Deomali Hills', state: 'Odisha', category: 'Hills', highlight: 'Highest mountain peak in Koraput', image: '/culture-grid.jpg' },
+  { id: 't13', name: 'Raghurajpur Heritage Village', state: 'Odisha', category: 'Village', highlight: 'Pattachitra & Gotipua master artisans', image: '/culture-grid.jpg' },
+  { id: 't14', name: 'Pipili Applique Hamlet', state: 'Odisha', category: 'Village', highlight: 'Centuries-old Chandua cloth embroidery', image: '/culture-grid.jpg' },
+  { id: 't15', name: 'Ratnagiri Buddhist Complex', state: 'Odisha', category: 'Buddhist', highlight: 'Pushpagiri Mahavihara carved monastery gate', image: '/culture-grid.jpg' },
+  { id: 't16', name: 'Tara Tarini Temple', state: 'Odisha', category: 'Temple', highlight: 'Sacred twin Goddess Shakti Peetha on Rushikulya', image: '/culture-grid.jpg' },
   { id: 't17', name: 'Puri Golden Beach', state: 'Odisha', category: 'Beach', highlight: 'Blue Flag certified sacred surf', image: '/puribeach.jpg' },
-  { id: 't18', name: 'Udayagiri & Khandagiri Caves', state: 'Odisha', category: 'Cave', highlight: '2nd C. BCE Jain monk rock dwellings & Hathigumpha', image: 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=800&q=80' },
-  { id: 't19', name: 'Satkosia Gorge Sanctuary', state: 'Odisha', category: 'Wildlife', highlight: 'Mahanadi river canyon & Gharial sanctuary', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80' },
-  { id: 't20', name: 'Barabati Fort Cuttack', state: 'Odisha', category: 'Heritage', highlight: '14th C. Ganga Dynasty moat & arched gateway', image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80' }
+  { id: 't18', name: 'Udayagiri & Khandagiri Caves', state: 'Odisha', category: 'Cave', highlight: '2nd C. BCE Jain monk rock dwellings & Hathigumpha', image: '/culture-grid.jpg' },
+  { id: 't19', name: 'Satkosia Gorge Sanctuary', state: 'Odisha', category: 'Wildlife', highlight: 'Mahanadi river canyon & Gharial sanctuary', image: '/culture-grid.jpg' },
+  { id: 't20', name: 'Barabati Fort Cuttack', state: 'Odisha', category: 'Heritage', highlight: '14th C. Ganga Dynasty moat & arched gateway', image: '/culture-grid.jpg' }
 ];
 
 export const placeGuides = {
@@ -136,9 +136,9 @@ export const culturalPlaceDetails = {
       ],
     },
     images: [
-      'https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg',
-      'https://images.pexels.com/photos/3889928/pexels-photo-3889928.jpeg',
-      'https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg',
+      '/culture-grid.jpg',
+      '/culture-grid.jpg',
+      '/culture-grid.jpg',
     ],
     mapLocation: { lat: 19.8876, lng: 86.0945 },
   },
@@ -192,8 +192,8 @@ export const culturalPlaceDetails = {
       ],
     },
     images: [
-      'https://images.pexels.com/photos/12895690/pexels-photo-12895690.jpeg',
-      'https://images.pexels.com/photos/1628533/pexels-photo-1628533.jpeg',
+      '/culture-grid.jpg',
+      '/culture-grid.jpg',
     ],
     mapLocation: { lat: 19.8048, lng: 85.8181 },
   },
@@ -253,7 +253,7 @@ export const culturalPlaceDetails = {
       hi: 'सम्राट अशोक के कलिंग युद्ध परिवर्तन का स्थल और ऐतिहासिक शांति स्तूप।',
       or: 'ସମ୍ରାଟ ଅଶୋକଙ୍କ କଳିଙ୍ଗ ଯୁଦ୍ଧ ପରିବର୍ତ୍ତନ ସ୍ଥଳୀ ଏବଂ ଐତିହାସିକ ଶାନ୍ତି ସ୍ତୂପ।'
     },
-    heroImage: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80',
+    heroImage: '/culture-grid.jpg',
     overview: {
       en: 'Dhauli Hill, situated on the banks of the sacred Daya River, is the transformative cradle of Buddhism in India where Emperor Ashoka renounced conquest by war in favor of conquest by Dharma (Dhammavijaya) in 261 BCE.',
       hi: 'पवित्र दया नदी के तट पर स्थित धौली पहाड़ी भारत में बौद्ध धर्म का परिवर्तनकारी पालना है, जहां 261 ईसा पूर्व में कलिंग युद्ध के बाद सम्राट अशोक ने युद्ध पर विजय के बजाय धर्म विजय को अपनाया।',

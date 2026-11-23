@@ -406,7 +406,7 @@ export function Villages() {
                   {/* Photo Banner */}
                   <div className="relative h-52 w-full overflow-hidden bg-slate-900">
                     <img
-                      src={village.verifiedMedia[0] || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'}
+                      src={village.verifiedMedia[0] || '/culture-grid.jpg'}
                       alt={village.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -607,7 +607,7 @@ export function Villages() {
                   {/* Product Image */}
                   <div className="relative h-48 w-full overflow-hidden bg-slate-900">
                     <img
-                      src={product.images[0] || 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80'}
+                      src={product.images[0] || '/culture-grid.jpg'}
                       alt={product.name}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />

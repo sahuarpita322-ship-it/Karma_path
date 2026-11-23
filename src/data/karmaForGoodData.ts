@@ -182,7 +182,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Puri Beach / Chandrabhaga, Konark',
     organization: 'Puri Green Coast Mission & Karma-Path',
-    image: 'https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '10 kg Plastic Removed',
     guidelines: [
       'Wear protective gloves and footwear.',
@@ -203,7 +203,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Cuttack / Naraj Mahanadi Embankment',
     organization: 'Green Utkal Initiative',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '1 Native Tree Planted',
     guidelines: [
       'Choose native species suited for Odisha soil.',
@@ -224,7 +224,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Raghurajpur / Pipli / Dhauli Foothills',
     organization: 'Bakul Foundation & Rural Learning Pods',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '1 Student Mentored (2 hrs)',
     guidelines: [
       'Respect local cultural sensibilities and child safety protocols.',
@@ -245,7 +245,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Bhubaneswar Old Town / Railway Settlement Area',
     organization: 'Odisha Hunger Heroes Kitchen',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '5 Fresh Meals Distributed',
     guidelines: [
       'Ensure food is hygienic, freshly cooked, and neatly packed.',
@@ -266,7 +266,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Cuttack / Balasore Senior Citizen Homes',
     organization: 'HelpAge India Odisha Chapter',
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '1 Meaningful Companion Visit',
     guidelines: [
       'Call ahead or coordinate with the shelter supervisor.',
@@ -287,7 +287,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Mayurbhanj / Koraput Tribal Learning Centers',
     organization: 'Utkal Vidya Sahayata',
-    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '10 Books / Kits Donated',
     guidelines: [
       'Ensure books are in good, readable condition.',
@@ -308,7 +308,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Raghurajpur / Pipili / Cuttack Alisha Bazar',
     organization: 'Odisha Crafts Council & Karma-Path',
-    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '1 Artisan Family Supported',
     guidelines: [
       'Pay fair prices without aggressive bargaining.',
@@ -329,7 +329,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Capital Hospital Blood Bank / Red Cross Bhawan, Bhubaneswar',
     organization: 'Indian Red Cross Society, Odisha State Branch',
-    image: 'https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '1 Unit Blood Donated (Saves up to 3 lives)',
     guidelines: [
       'Must be 18+ years of age, weighed 45kg+, and in good health.',
@@ -350,7 +350,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Daya River Ghats, Dhauli Peace Pagoda Base',
     organization: 'Odisha River Keepers Alliance',
-    image: 'https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '50m Riverbank Restored',
     guidelines: [
       'Work in pairs or groups near water bodies for safety.',
@@ -371,7 +371,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Challenging',
     location: 'OSDMA Emergency Volunteer Hubs, Statewide',
     organization: 'Odisha Disaster Management Authority (OSDMA) Network',
-    image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '1 Day Humanitarian Service',
     guidelines: [
       'Follow all official safety and evacuation advisories.',
@@ -392,7 +392,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Udayagiri-Khandagiri Caves & Ekamra Kshetra',
     organization: 'Clean Bhubaneswar Foundation',
-    image: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: '50 PET Bottles Recycled',
     guidelines: [
       'Empty and rinse beverage bottles if possible.',
@@ -413,7 +413,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Rushikulya River Mouth Beach, Ganjam',
     organization: 'Odisha Wildlife Protection Society',
-    image: 'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     impactMetric: 'Protected Sea Turtle Habitat',
     guidelines: [
       'Never touch nesting turtles or hatchlings.',
@@ -510,52 +510,52 @@ export const COMMUNITY_IMPACT_STORIES: ImpactStory[] = [
   {
     id: 'story-1',
     userName: 'Arpita Sahu',
-    userAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    userAvatar: '/culture-grid.jpg',
     activityTitle: 'Collected 12kg Plastic Waste at Chandrabhaga Beach',
     category: 'Environmental',
     location: 'Chandrabhaga Beach, Puri',
     date: '2026-11-12',
     story: 'Organized a sunrise plastic cleanup with 4 fellow tourists along the Konark-Chandrabhaga coast, properly segregating bottles and fishing net fragments. The fishermen joined hands with us!',
-    image: 'https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     karmaPoints: 20,
     applauseCount: 142
   },
   {
     id: 'story-2',
     userName: 'Debasis Mohapatra',
-    userAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    userAvatar: '/culture-grid.jpg',
     activityTitle: 'Planted 10 Banyan & Neem Saplings at Naraj Riverbank',
     category: 'Environmental',
     location: 'Cuttack, Mahanadi Bank',
     date: '2026-11-10',
     story: 'Along with my college friends, we planted 10 indigenous saplings along the riverbank embankment. We also set up bamboo guards to shield them from grazing cattle.',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     karmaPoints: 15,
     applauseCount: 98
   },
   {
     id: 'story-3',
     userName: 'Priyanka Das',
-    userAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80',
+    userAvatar: '/culture-grid.jpg',
     activityTitle: 'Distributed 40 Fresh Meals to Labor Families in Bhubaneswar',
     category: 'Helping People',
     location: 'Old Town, Bhubaneswar',
     date: '2026-11-08',
     story: 'Prepared clean packets of hot Khichdi and Dalma with our community kitchen. Seeing the radiant smiles of children was the purest blessing.',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     karmaPoints: 20,
     applauseCount: 215
   },
   {
     id: 'story-4',
     userName: 'Soumya Ranjan Nayak',
-    userAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+    userAvatar: '/culture-grid.jpg',
     activityTitle: 'Donated 50 Notebooks & Geometry Boxes at Raghurajpur',
     category: 'Education',
     location: 'Raghurajpur Heritage Village',
     date: '2026-11-05',
     story: 'Visited the village primary school and distributed notebooks, pencils, and colors to 25 young artists who are learning traditional Pattachitra sketching.',
-    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     karmaPoints: 15,
     applauseCount: 167
   }

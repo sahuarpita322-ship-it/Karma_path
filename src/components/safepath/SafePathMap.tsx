@@ -169,11 +169,12 @@ export function SafePathMap({
           />
         )}
 
-        {/* Beautiful high-resolution OpenStreetMap TileLayer */}
+        {/* Beautiful high-resolution OpenStreetMap TileLayer with Offline Fallback */}
         {/* @ts-ignore */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | Karma-Path Offline Map'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          errorTileUrl={`data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><rect width="256" height="256" fill="%23170D2C"/><path d="M0 64 H256 M0 128 H256 M0 192 H256 M64 0 V256 M128 0 V256 M192 0 V256" stroke="%232D1B4E" stroke-width="1" stroke-dasharray="3 3"/><circle cx="128" cy="128" r="2.5" fill="%237955AE" opacity="0.6"/><text x="128" y="132" font-family="sans-serif" font-size="8" fill="%23A98AD9" opacity="0.4" text-anchor="middle">SAFE-PATH OFFLINE RADAR</text></svg>`}
           maxZoom={19}
         />
 

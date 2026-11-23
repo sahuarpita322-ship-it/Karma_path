@@ -86,7 +86,7 @@ export function Tasks() {
       title: title.trim(),
       description: description.trim(),
       location: location.trim(),
-      proofUrl: proofUrl.trim() || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+      proofUrl: proofUrl.trim() || '/culture-grid.jpg',
     });
 
     setSubmitted(true);

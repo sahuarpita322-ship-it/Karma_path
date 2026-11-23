@@ -16,10 +16,12 @@ import {
   FaSignInAlt,
   FaMapMarkerAlt,
   FaBookOpen,
-  FaHeart
+  FaHeart,
+  FaDesktop
 } from 'react-icons/fa';
 import { useStore } from '../context/store';
 import LanguageSwitcher from './LanguageSwitcher';
+import { DesktopAppModal } from './DesktopAppModal';
 
 export function Navbar() {
   const karmaBalance = useStore((s) => s.karmaBalance);
@@ -30,6 +32,7 @@ export function Navbar() {
   const activeTrip = useStore((s) => s.activeTrip);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
+  const [desktopModalOpen, setDesktopModalOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -150,6 +153,17 @@ export function Navbar() {
         {/* Right Action Tools: Language, Theme Toggle & User Auth */}
         <div className="flex items-center gap-2 sm:gap-3">
           
+          {/* Offline Ready & Desktop App Trigger Pill */}
+          <button
+            onClick={() => setDesktopModalOpen(true)}
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-[#7955AE]/15 text-[#7955AE] dark:text-[#FFFFFF] border border-[#7955AE]/30 dark:border-[#B9A5DF]/40 hover:bg-[#7955AE]/25 transition shadow-sm"
+            title="Karma-Path Offline Ready & Desktop App"
+          >
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <FaDesktop className="text-xs" />
+            <span>Desktop App</span>
+          </button>
+
           {/* Language Selector */}
           <div className="hidden sm:block">
             <LanguageSwitcher />
@@ -293,6 +307,18 @@ export function Navbar() {
             <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-xl bg-[#7955AE]/10 dark:bg-white/5 flex items-center gap-2 text-[#302342] dark:text-[#F8F4FF]">
               <FaCoins className="text-[#B9A5DF]" /> My Journey
             </Link>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setDesktopModalOpen(true);
+              }}
+              className="p-2.5 rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-between font-bold text-xs"
+            >
+              <div className="flex items-center gap-2">
+                <FaDesktop /> Desktop App & Offline Mode
+              </div>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            </button>
           </div>
 
           <div className="pt-2 border-t border-[#B9A5DF]/20 flex items-center justify-between">
@@ -307,6 +333,12 @@ export function Navbar() {
           </div>
         </div>
       )}
+
+      {/* Standalone Desktop App & Offline Info Modal */}
+      <DesktopAppModal
+        isOpen={desktopModalOpen}
+        onClose={() => setDesktopModalOpen(false)}
+      />
     </header>
   );
 }

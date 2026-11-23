@@ -196,7 +196,7 @@ export const odishaArtisans: Artisan[] = [
     villageName: 'Raghurajpur',
     district: 'Puri',
     craftCategory: 'Pattachitra & Palm Leaf Engraving',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    avatar: '/culture-grid.jpg',
     experienceYears: 34,
     bio: 'Born in a lineage of traditional Chitrakaras, Guru Rabindra has trained over 40 youth in natural pigment preparation and intricate Pattachitra lines.',
     makingProcessStory: 'Every painting starts with hand-gluing two cotton sheets with tamarind seed paste. Stone powders (Hingula for red, Haritala for yellow, conch shell for white) are grounded for 3 days before painting with fine squirrel-hair brushes.',
@@ -211,7 +211,7 @@ export const odishaArtisans: Artisan[] = [
     villageName: 'Nuapatna (Tigiria)',
     district: 'Cuttack',
     craftCategory: 'Khandua Pata & Silk Ikat',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+    avatar: '/culture-grid.jpg',
     experienceYears: 28,
     bio: 'Seventh generation weaver of sacred Khandua Pata silks dedicated to the Shree Jagannath temple, specializing in calligraphy wefts.',
     makingProcessStory: 'The Sanskrit shlokas of Gita Govinda are tied into silk warp threads millimeter by millimeter before natural lac dyeing. One saree takes nearly 30 days of meticulous loom work.',
@@ -226,7 +226,7 @@ export const odishaArtisans: Artisan[] = [
     villageName: 'Kotpad',
     district: 'Koraput',
     craftCategory: 'Organic Aal Dye Tribal Weaving',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    avatar: '/culture-grid.jpg',
     experienceYears: 22,
     bio: 'Championing women weavers in Kotpad to protect the rare tribal natural dye tradition from extinction.',
     makingProcessStory: 'We forage Aal roots from the jungle, grind them on stone mortars, and mix with castor oil and wood ash. The deep maroon dye gets richer with every wash and never fades.',
@@ -241,7 +241,7 @@ export const odishaArtisans: Artisan[] = [
     villageName: 'Pipili',
     district: 'Puri',
     craftCategory: 'Pipili Applique & Chandua',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80',
+    avatar: '/culture-grid.jpg',
     experienceYears: 30,
     bio: 'Leads the family workshop responsible for stitching the ceremonial canopy over the Nandighosa chariot during Puri Rath Yatra.',
     makingProcessStory: 'Cloth patches are cut freehand without stencils and edge-embroidered with mirror insets and yellow piping using traditional chain and buttonhole stitches.',
@@ -256,7 +256,7 @@ export const odishaArtisans: Artisan[] = [
     villageName: 'Cuttack Old Town',
     district: 'Cuttack',
     craftCategory: 'Silver Filigree (Tarakasi)',
-    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80',
+    avatar: '/culture-grid.jpg',
     experienceYears: 40,
     bio: 'Master of Cuttack’s 500-year-old Tarakasi silver filigree, transforming raw silver into thread as fine as gossamer.',
     makingProcessStory: 'Pure 92.5% silver is drawn through steel dies to hair-thin wires, twisted into spirals, and soldered over charcoal without glue into exquisite lacework.',
@@ -271,7 +271,7 @@ export const odishaArtisans: Artisan[] = [
     villageName: 'Sadeibareni',
     district: 'Dhenkanal',
     craftCategory: 'Dhokra Bell-Metal Casting',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80',
+    avatar: '/culture-grid.jpg',
     experienceYears: 25,
     bio: 'Practicing the authentic lost-wax method inherited from his ancestors, keeping Sadeibareni on the international indigenous craft map.',
     makingProcessStory: 'A clay core is coated in beeswax wires, covered in river mud, and heated in open pit kilns. Molten brass fills the cavity left by melting wax.',
@@ -298,8 +298,8 @@ export const odishaProducts: Product[] = [
     price: 4200,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg',
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Crafted over 18 days by Guru Rabindra in his Raghurajpur verandah studio.',
     karmaReward: 20
@@ -319,7 +319,7 @@ export const odishaProducts: Product[] = [
     price: 9800,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Woven with prayerful dedication by Kishori Meher and his son over 28 continuous days.',
     karmaReward: 20
@@ -339,7 +339,7 @@ export const odishaProducts: Product[] = [
     price: 3600,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Supports women spinners and forest foragers of Kotpad village.',
     karmaReward: 20
@@ -359,7 +359,7 @@ export const odishaProducts: Product[] = [
     price: 2800,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Crafted in the Samad family workshop adhering to historic Rath Yatra canopy specifications.',
     karmaReward: 20
@@ -379,7 +379,7 @@ export const odishaProducts: Product[] = [
     price: 7500,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Master Prabhat spent 14 days shaping over 600 tiny silver wire coils to build this feather plume.',
     karmaReward: 20
@@ -399,7 +399,7 @@ export const odishaProducts: Product[] = [
     price: 1950,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Directly benefits the Situla tribal metal smith community in Sadeibareni.',
     karmaReward: 20
@@ -419,7 +419,7 @@ export const odishaProducts: Product[] = [
     price: 1250,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Ancient technique that preserves manuscripts for upwards of 500 years without paper decay.',
     karmaReward: 20
@@ -439,7 +439,7 @@ export const odishaProducts: Product[] = [
     price: 4500,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Celebrated traditional weave of Western Odisha, soft, durable, and naturally breathable.',
     karmaReward: 20
@@ -459,7 +459,7 @@ export const odishaProducts: Product[] = [
     price: 12500,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Woven over 22 days by master weaver K. Mohan Rao in his Nuagaon pit loom studio.',
     karmaReward: 25
@@ -479,7 +479,7 @@ export const odishaProducts: Product[] = [
     price: 1850,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Crafted by National Awardee Kailash Maharana preserving a 200-year Ganjam royal tradition.',
     karmaReward: 20
@@ -499,7 +499,7 @@ export const odishaProducts: Product[] = [
     price: 450,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Directly supports women self-help groups in rural Ganjam.',
     karmaReward: 15
@@ -519,7 +519,7 @@ export const odishaProducts: Product[] = [
     price: 2400,
     available: true,
     images: [
-      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'
+      '/culture-grid.jpg'
     ],
     artisanStory: 'Woven in Barpali village carrying forward the legendary legacy of Padmashree Krutartha Acharya.',
     karmaReward: 20
@@ -656,7 +656,7 @@ export const odishaExperiences: CulturalExperience[] = [
     duration: '4 Hours (Half Day)',
     requiredKarma: 40,
     price: 650,
-    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     description: 'Sit with a master artisan on an open village verandah. Learn to grind natural mineral pigments and paint your own miniature Pattachitra artwork to take home.',
     communityHost: 'Raghurajpur Artisan Co-operative',
     maxParticipants: 8,
@@ -670,7 +670,7 @@ export const odishaExperiences: CulturalExperience[] = [
     duration: 'Full Day (6 Hours)',
     requiredKarma: 80,
     price: 850,
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     description: 'Learn the ancient mathematical tie-dye principles of Odia Bandha, operate a traditional bamboo pit loom, and share an authentic vegetarian meal with a weaver family.',
     communityHost: 'Meher Weavers Council',
     maxParticipants: 6,
@@ -684,7 +684,7 @@ export const odishaExperiences: CulturalExperience[] = [
     duration: '5 Hours',
     requiredKarma: 60,
     price: 700,
-    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     description: 'Walk through indigenous organic millet terraces, understand traditional heirloom seed preservation, and savor an authentic 7-course tribal culinary feast cooked over woodfires.',
     communityHost: 'Koraput Tribal Farmers Federation',
     maxParticipants: 10,
@@ -698,7 +698,7 @@ export const odishaExperiences: CulturalExperience[] = [
     duration: '3 Hours',
     requiredKarma: 100,
     price: 1200,
-    image: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80',
+    image: '/culture-grid.jpg',
     description: 'Join trained community eco-guards along the dramatic Mahanadi river canyon. Observe Gharial crocodile basking sandbanks and listening to water bird calls at sunset.',
     communityHost: 'Tikarpada Eco-Development Committee',
     maxParticipants: 6,

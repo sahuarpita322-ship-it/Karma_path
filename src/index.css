@@ -1,5 +1,48 @@
 @import "tailwindcss";
 
+@theme {
+  --color-midnight: #170D2C;
+  --color-royal-950: #110822;
+  --color-royal-900: #170D2C;
+  --color-royal-850: #211238;
+  --color-royal-800: #2C184A;
+  --color-royal-700: #4B2B7D;
+  --color-royal-600: #613A9E;
+  --color-royal-500: #7955AE;
+  --color-royal-400: #9370D8;
+  --color-royal-300: #A98AD9;
+  --color-royal-200: #BBA5E5;
+  --color-royal-100: #D9CCF2;
+  --color-royal-50: #F5F0FC;
+  
+  --color-lavender-600: #613A9E;
+  --color-lavender-500: #7955AE;
+  --color-lavender-400: #A98AD9;
+  --color-lavender-300: #BBA5E5;
+  --color-lavender-200: #D9CCF2;
+  --color-lavender-100: #EEE6F8;
+  --color-lavender-50: #F5F0FC;
+
+  --color-silver-400: #C7BED6;
+  --color-silver-300: #DBD5E6;
+  --color-silver-200: #E8E3F0;
+  --color-silver-100: #F3EFF8;
+  --color-silver-50: #FAF8FC;
+
+  --color-plum-950: #1E122C;
+  --color-plum-900: #302342;
+  --color-plum-700: #503C6B;
+  --color-plum-500: #716680;
+  --color-plum-300: #9C8FB3;
+  --color-plum-200: #BDB1D4;
+  --color-plum-100: #D0C3E3;
+  --color-plum-50: #F0EAF8;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-cinzel: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
 /* =========================================================================
    KARMA-PATH: CINEMATIC AI-POWERED 3D HERITAGE DESIGN SYSTEM
    Visual Identity: Royal Violet (#170D2C) + Cosmic Purple (#291542) +

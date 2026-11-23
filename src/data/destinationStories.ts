@@ -69,7 +69,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'Cosmic Architecture & The 24 Sundials',
         eraOrDate: '1255 CE · Astronomical Engineering',
         narrative: 'Twelve hundred master artisans under chief architect Bishu Maharana quarried and transported khondalite, chlorite, and laterite stones across vast distances. Every wheel was calibrated so that the shadow of its axle-pin fell squarely across the spokes, dividing the day into precise praharas and minutes. The seven horses represented the spectrum of light and the seven days of the celestial week.',
-        image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'Intricate chlorite carvings portraying celestial musicians (Alasa Kanyas), royal cavalcades, and celestial dancers adorn the plinth.',
         source: 'Archaeological Survey of India Archives'
       },
@@ -79,7 +79,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'The Fall of the Vimana & Dharmapada’s Sacrifice',
         eraOrDate: '16th–19th Century CE · Transformation',
         narrative: 'Folklore and historical accounts converge on the poignant legend of Dharmapada, the 12-year-old son of Bishu Maharana. When the artisans could not fix the crowning Dadhinauti stone, Dharmapada climbed to the summit, anchored the kalasha, and leaped into the crashing sea to save the craftsmen from the king’s wrath. Centuries later, marine erosion and seismic shifts brought down the towering 229-foot sanctum.',
-        image: 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'The preserved Jagamohana (Assembly Hall), saved from structural collapse in 1903 through British and Indian engineering initiatives.',
         source: 'Odisha State Archives & ASI Monograph'
       },
@@ -225,7 +225,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'Nalabana: Winter Sanctuary of Millions',
         eraOrDate: 'Seasonal Migration · November to February',
         narrative: 'When sub-zero blizzards freeze northern Eurasia, flocks of flamingos, bar-headed geese, pintails, and pelicans fly thousands of kilometers across the Himalayas to settle in the reed-filled sanctuary of Nalabana Island, feeding on abundant plankton and fish.',
-        image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'Flocks of migratory birds feeding in the shallow brackish flats of Nalabana Island.',
         source: 'Chilika Wildlife Division & Forest Department'
       },
@@ -285,7 +285,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'The Nolia Seafarers & Catamarans',
         eraOrDate: 'Living Coastal Culture',
         narrative: 'The brave Nolia fishermen have lived on this shore for centuries. Riding ferocious surf on traditional wooden logs lashed together as catamarans, they act as lifesavers for pilgrims and masters of deep-sea net fishing.',
-        image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'Traditional catamarans resting on the golden sands of Puri after an early morning catch.',
         source: 'Odisha Tourism Archives'
       },
@@ -305,7 +305,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'International Blue Flag Certification',
         eraOrDate: '2020 – Present Day',
         narrative: 'Golden Beach at Puri achieved the rigorous Foundation for Environmental Education (FEE) Denmark Blue Flag certification for pristine water quality, solar-powered shore amenities, safe bathing zones, and zero-plastic stewardship.',
-        image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'The impeccably maintained Golden Beach zone of Puri, recognized among the cleanest eco-beaches globally.',
         source: 'Odisha Tourism & Society of Integrated Coastal Management'
       }
@@ -620,7 +620,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'The Colonial Legacy of Daring Sahib',
         eraOrDate: 'c. 1880s · Colonial Origin',
         narrative: 'In the late 19th century, a British officer named Daring Sahib was enchanted by the crisp climate of the plateau. Establishing an administrative post, he encouraged the plantation of pine, silver oak, and eucalyptus groves that lend Daringbadi its unique alpine aura.',
-        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'Misty pine groves of Daringbadi stretching across the rolling highlands of Kandhamal.',
         source: 'Odisha Tourism & District Administration Kandhamal'
       },
@@ -640,7 +640,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'Midubanda & Dasingbadi Waterfalls',
         eraOrDate: 'Natural Wonders',
         narrative: 'Deep inside the dense sal forest, roaring mountain rivers plunge over granite boulders. Midubanda and Dasingbadi waterfalls create natural swimming pools and serene nature trails frequented by birdwatchers and trekkers.',
-        image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'Cascading waterfalls emerging from the dense evergreen forest canopy in Kandhamal.',
         source: 'Forest Department Odisha'
       },
@@ -689,7 +689,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'The Ancient Precambrian Crown',
         eraOrDate: 'Over 1 Billion Years Ago · Geological Origin',
         narrative: 'Formed during the ancient mobile belt collisions that forged the Indian subcontinent, Deomali is composed of charnockite and khondalite rocks rich in aluminum bauxite, sculptured over hundreds of millions of years of rainfall and wind into rolling alpine ridges.',
-        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'The sweeping grass-covered ridges of Deomali, rising above the early morning cloud inversion.',
         source: 'Geological Survey of India & Odisha Tourism'
       },
@@ -699,7 +699,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'The Shola Grasslands & Rare Flora',
         eraOrDate: 'Botanical Sanctuary',
         narrative: 'Unlike the sal forests below, the high-altitude plateau of Deomali supports endemic montane grasses and wild orchids. Local tribal healers (Disaris) scale the crags to gather rare medicinal herbs used in traditional herbal medicine for generations.',
-        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'High-altitude grasslands and rugged hiking tracks winding to the summit of Odisha.',
         source: 'Forest Department Koraput'
       },
@@ -719,7 +719,7 @@ export const curatedDestinationStories: Record<string, DestinationStory> = {
         chapterTitle: 'Aero-Sports & Modern Cloud Treks',
         eraOrDate: 'Present Day · Adventure Tourism',
         narrative: 'In recent years, the Odisha Tourism Development Corporation established state-of-the-art eco-cottages managed by local youth. Paragliding pilots test favorable thermal winds, while sunrise enthusiasts hike to the summit viewing deck to watch dawn ignite the sea of clouds.',
-        image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+        image: '/culture-grid.jpg',
         caption: 'Panoramic sunrise vista from the summit observatory platform on Deomali.',
         source: 'Odisha Tourism, Government of Odisha'
       }
