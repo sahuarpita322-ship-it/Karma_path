@@ -218,7 +218,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Cuttack / Bhubaneswar / Puri Senior Citizen Care Shelters',
     organization: 'HelpAge India Odisha & Utkal Senior Citizen Society',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/old-age-home.jpg',
     impactMetric: '1 Meaningful Companion Visit (2+ hrs)',
     guidelines: [
       'Coordinate in advance with shelter managers for visiting hours.',
@@ -239,7 +239,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Raghurajpur / Pipili / Cuttack Alisha Bazar',
     organization: 'Odisha Crafts Council & Karma-Path',
-    image: '/odisha-handloom-crafts.jpg',
+    image: '/tasks/artisan-support.jpg',
     impactMetric: '1 Artisan Family Supported',
     guidelines: [
       'Pay fair prices without aggressive bargaining.',
@@ -260,7 +260,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Old Town Ekamra Kshetra / Mukteswar Temple, Bhubaneswar',
     organization: 'Ekamra Heritage Care Guild',
-    image: '/puri.jpg',
+    image: '/tasks/temple-cleanup.jpg',
     impactMetric: '1 Heritage Temple Courtyard Cleaned',
     guidelines: [
       'Remove footwear and respect temple sanctum customs.',
@@ -281,7 +281,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'AIIMS Bhubaneswar / District Headquarter Hospitals',
     organization: 'Senior Smiles Care Network',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/elderly-care.jpg',
     impactMetric: '1 Senior Citizen Medical Escort',
     guidelines: [
       'Handle wheelchairs and walking aids with extreme care and patience.',
@@ -302,7 +302,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Raghurajpur / Sadeibareni / Kotpad Artisan Hamlets',
     organization: 'Odisha Oral Archive & Karma-Path',
-    image: '/odisha-classical-music.jpg',
+    image: '/tasks/record-folklore.jpg',
     impactMetric: '1 Oral Folk Story / Song Digitized',
     guidelines: [
       'Always seek permission and explain the digital archive educational purpose.',
@@ -323,7 +323,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Kandhamal / Koraput / Mayurbhanj Rural Villages',
     organization: 'Utkal Winter Care Mission',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/elderly-blanket.jpg',
     impactMetric: '3 Senior Citizens Supported',
     guidelines: [
       'Distribute new or freshly sanitized warm blankets and clothes.',
@@ -344,7 +344,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Puri Beach / Chandrabhaga, Konark',
     organization: 'Puri Green Coast Mission & Karma-Path',
-    image: '/puribeach.jpg',
+    image: '/tasks/beach-cleanup.jpg',
     impactMetric: '10 kg Plastic Removed',
     guidelines: [
       'Wear protective gloves and footwear.',
@@ -365,7 +365,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Cuttack / Naraj Mahanadi Embankment',
     organization: 'Green Utkal Initiative',
-    image: '/ansupa-lake.jpg',
+    image: '/tasks/tree-plantation.jpg',
     impactMetric: '1 Native Tree Planted',
     guidelines: [
       'Choose native species suited for Odisha soil.',
@@ -386,7 +386,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Raghurajpur / Pipli / Dhauli Foothills',
     organization: 'Bakul Foundation & Rural Learning Pods',
-    image: '/villages/raghurajpur-card.jpg',
+    image: '/tasks/teach-children.jpg',
     impactMetric: '1 Student Mentored (2 hrs)',
     guidelines: [
       'Respect local cultural sensibilities and child safety protocols.',
@@ -407,7 +407,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Bhubaneswar Old Town / Railway Settlement Area',
     organization: 'Odisha Hunger Heroes Kitchen',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/food-distribution.jpg',
     impactMetric: '5 Fresh Meals Distributed',
     guidelines: [
       'Ensure food is hygienic, freshly cooked, and neatly packed.',
@@ -428,7 +428,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Mayurbhanj / Koraput Tribal Learning Centers',
     organization: 'Utkal Vidya Sahayata',
-    image: '/villages/kotpad-card.jpg',
+    image: '/tasks/donate-books.jpg',
     impactMetric: '10 Books / Kits Donated',
     guidelines: [
       'Ensure books are in good, readable condition.',
@@ -449,7 +449,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Bhubaneswar Lingaraj Temple Road / Puri Bada Danda',
     organization: 'Utkal Seva Vahini & Karma-Path',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/water-kiosk.jpg',
     impactMetric: '50+ Pilgrims Hydrated',
     guidelines: [
       'Use only certified boiled or RO filtered drinking water.',
@@ -470,7 +470,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Capital Hospital Blood Bank / Red Cross Bhawan, Bhubaneswar',
     organization: 'Indian Red Cross Society, Odisha State Branch',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/blood-donation.jpg',
     impactMetric: '1 Unit Blood Donated (Saves up to 3 lives)',
     guidelines: [
       'Must be 18+ years of age, weighed 45kg+, and in good health.',
@@ -491,7 +491,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Daya River Ghats, Dhauli Peace Pagoda Base',
     organization: 'Odisha River Keepers Alliance',
-    image: '/dhauli-shanti-stupa.jpg',
+    image: '/tasks/river-restoration.jpg',
     impactMetric: '50m Riverbank Restored',
     guidelines: [
       'Work in pairs or groups near water bodies for safety.',
@@ -512,7 +512,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Challenging',
     location: 'OSDMA Emergency Volunteer Hubs, Statewide',
     organization: 'Odisha Disaster Management Authority (OSDMA) Network',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/disaster-relief.jpg',
     impactMetric: '1 Day Humanitarian Service',
     guidelines: [
       'Follow all official safety and evacuation advisories.',
@@ -533,7 +533,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Easy',
     location: 'Udayagiri-Khandagiri Caves & Ekamra Kshetra',
     organization: 'Clean Bhubaneswar Foundation',
-    image: '/udayagiri-khandagiri.jpg',
+    image: '/tasks/plastic-upcycle.jpg',
     impactMetric: '50 PET Bottles Recycled',
     guidelines: [
       'Empty and rinse beverage bottles if possible.',
@@ -554,7 +554,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     difficulty: 'Medium',
     location: 'Rushikulya River Mouth Beach, Ganjam',
     organization: 'Odisha Wildlife Protection Society',
-    image: '/bhitarkanika.jpg',
+    image: '/tasks/turtle-sanctuary.jpg',
     impactMetric: 'Protected Sea Turtle Habitat',
     guidelines: [
       'Never touch nesting turtles or hatchlings.',
@@ -657,46 +657,46 @@ export const COMMUNITY_IMPACT_STORIES: ImpactStory[] = [
     location: 'Chandrabhaga Beach, Puri',
     date: '2026-11-12',
     story: 'Organized a sunrise plastic cleanup with 4 fellow tourists along the Konark-Chandrabhaga coast, properly segregating bottles and fishing net fragments. The fishermen joined hands with us!',
-    image: '/puribeach.jpg',
+    image: '/tasks/beach-cleanup.jpg',
     karmaPoints: 20,
     applauseCount: 142
   },
   {
     id: 'story-2',
     userName: 'Debasis Mohapatra',
-    userAvatar: '/ansupa-lake.jpg',
+    userAvatar: '/tasks/tree-plantation.jpg',
     activityTitle: 'Planted 10 Banyan & Neem Saplings at Naraj Riverbank',
     category: 'Environmental',
     location: 'Cuttack, Mahanadi Bank',
     date: '2026-11-10',
     story: 'Along with my college friends, we planted 10 indigenous saplings along the riverbank embankment. We also set up bamboo guards to shield them from grazing cattle.',
-    image: '/ansupa-lake.jpg',
+    image: '/tasks/tree-plantation.jpg',
     karmaPoints: 15,
     applauseCount: 98
   },
   {
     id: 'story-3',
     userName: 'Priyanka Das',
-    userAvatar: '/doing-good-deeds.jpg',
+    userAvatar: '/tasks/food-distribution.jpg',
     activityTitle: 'Distributed 40 Fresh Meals to Labor Families in Bhubaneswar',
     category: 'Helping People',
     location: 'Old Town, Bhubaneswar',
     date: '2026-11-08',
     story: 'Prepared clean packets of hot Khichdi and Dalma with our community kitchen. Seeing the radiant smiles of children was the purest blessing.',
-    image: '/doing-good-deeds.jpg',
+    image: '/tasks/food-distribution.jpg',
     karmaPoints: 20,
     applauseCount: 215
   },
   {
     id: 'story-4',
     userName: 'Soumya Ranjan Nayak',
-    userAvatar: '/villages/raghurajpur-card.jpg',
+    userAvatar: '/tasks/teach-children.jpg',
     activityTitle: 'Donated 50 Notebooks & Geometry Boxes at Raghurajpur',
     category: 'Education',
     location: 'Raghurajpur Heritage Village',
     date: '2026-11-05',
     story: 'Visited the village primary school and distributed notebooks, pencils, and colors to 25 young artists who are learning traditional Pattachitra sketching.',
-    image: '/villages/raghurajpur-card.jpg',
+    image: '/tasks/donate-books.jpg',
     karmaPoints: 15,
     applauseCount: 167
   }
