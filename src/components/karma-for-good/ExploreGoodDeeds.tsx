@@ -24,7 +24,11 @@ export function ExploreGoodDeeds({ onSelectActivityToParticipate }: ExploreGoodD
 
   const filteredActivities = useMemo(() => {
     return KARMA_ACTIVITIES.filter((act) => {
-      const matchCat = selectedCategory === 'All' || act.category === selectedCategory;
+      const matchCat =
+        selectedCategory === 'All' ||
+        act.category === selectedCategory ||
+        act.category.toLowerCase().includes(selectedCategory.toLowerCase()) ||
+        selectedCategory.toLowerCase().includes(act.category.toLowerCase());
       const matchDiff = selectedDifficulty === 'All' || act.difficulty === selectedDifficulty;
       const matchSearch =
         act.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -42,7 +46,7 @@ export function ExploreGoodDeeds({ onSelectActivityToParticipate }: ExploreGoodD
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#7955AE]/15 pb-4">
         <div className="space-y-1.5 max-w-2xl">
           <span className="px-3 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#7955AE] text-white shadow-md inline-block">
-            Impact Catalog · ୧୨ ସମାଜସେବା ଅଭିଯାନ
+            Impact Catalog · {KARMA_ACTIVITIES.length} Verified Causes
           </span>
           <h2 className="text-2xl sm:text-4xl font-cinzel font-black text-[#180B2B] dark:text-white">
             Explore Good Deeds
@@ -111,7 +115,12 @@ export function ExploreGoodDeeds({ onSelectActivityToParticipate }: ExploreGoodD
           </button>
 
           {IMPACT_CATEGORIES.map((cat) => {
-            const count = KARMA_ACTIVITIES.filter((a) => a.category === cat.name || a.category.includes(cat.name.split(' ')[0])).length;
+            const count = KARMA_ACTIVITIES.filter(
+              (a) =>
+                a.category === cat.name ||
+                a.category.toLowerCase().includes(cat.name.toLowerCase()) ||
+                cat.name.toLowerCase().includes(a.category.toLowerCase())
+            ).length;
             const isSelected = selectedCategory === cat.name || selectedCategory === cat.id;
 
             return (

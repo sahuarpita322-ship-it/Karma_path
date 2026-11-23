@@ -10,11 +10,26 @@ export interface ImpactCategory {
   examples: string[];
 }
 
+export type ImpactCategoryName =
+  | 'Environmental'
+  | 'Helping People'
+  | 'Education'
+  | 'Elderly Care'
+  | 'Community Service'
+  | 'Culture & Heritage'
+  | 'Environmental Protection'
+  | 'Helping People in Need'
+  | 'Education & Child Welfare'
+  | 'Supporting Elderly People'
+  | 'Community & Social Service'
+  | 'Preserving Local Culture'
+  | string;
+
 export interface KarmaActivity {
   id: string;
   name: string;
   odiaName: string;
-  category: 'Environmental' | 'Helping People' | 'Education' | 'Elderly Care' | 'Community Service' | 'Culture & Heritage';
+  category: ImpactCategoryName;
   shortDescription: string;
   fullDetails: string;
   timeRequired: string;
@@ -32,7 +47,7 @@ export interface VolunteerOpportunity {
   title: string;
   organization: string;
   isVerifiedOrg: boolean;
-  category: 'Environmental' | 'Helping People' | 'Education' | 'Elderly Care' | 'Community Service' | 'Culture & Heritage';
+  category: ImpactCategoryName;
   location: string;
   district: string;
   date: string;
@@ -168,13 +183,160 @@ export const IMPACT_CATEGORIES: ImpactCategory[] = [
   }
 ];
 
-// Explore Good Deeds Activities (12 Interactive Cards)
+// Explore Good Deeds Activities (Interactive Causes)
 export const KARMA_ACTIVITIES: KarmaActivity[] = [
+  {
+    id: 'act-puri-sea-beach-aarti',
+    name: 'Attend Evening Puri Sea Beach Maha Aarti',
+    odiaName: 'ପୁରୀ ମହୋଦଧି ସନ୍ଧ୍ୟା ମହା ଆରତୀ ଦର୍ଶନ ଓ ସେବା',
+    category: 'Preserving Local Culture',
+    shortDescription: 'Attend the sacred evening Mahodadhi (Sea Beach) Aarti in Puri, assist volunteers in seating arrangements, and maintain coastal spiritual sanctity.',
+    fullDetails: 'Every evening at Swargadwar and Golden Sea Beach in Puri, priests conduct the majestic Mahodadhi Aarti with multi-tiered brass deepas, sacred conch shells, and Vedic chanting dedicated to Lord Jagannath as Darubrahma. Help maintain queue discipline, assist elderly pilgrims with eco-friendly seating, maintain zero beach littering, and participate in this living sacred spiritual tradition.',
+    timeRequired: '1 - 2 Hours',
+    karmaPoints: 20,
+    difficulty: 'Easy',
+    location: 'Swargadwar / Golden Sea Beach, Puri',
+    organization: 'Puri Mahodadhi Aarti Seva Samiti & Karma-Path',
+    image: '/puri-beach-aarti.jpg',
+    impactMetric: '1 Sacred Aarti Attended & Supported',
+    guidelines: [
+      'Arrive at the beach front by 5:45 PM before sunset rituals begin.',
+      'Assist elderly devotees and families with peaceful sitting space on the sand.',
+      'Ensure zero single-use plastic bottles or snack packets are discarded on the shoreline.',
+      'Upload a geo-tagged photo or short video attending the beach aarti as verification proof.'
+    ]
+  },
+  {
+    id: 'act-volunteering-old-age-homes',
+    name: 'Volunteering in Old-Age Homes',
+    odiaName: 'ବୃଦ୍ଧାଶ୍ରମରେ ବରିଷ୍ଠଙ୍କ ସେବା ଓ ସ୍ନେହ ଆଦାନପ୍ରଦାନ',
+    category: 'Supporting Elderly People',
+    shortDescription: 'Visit registered senior care shelters, provide companionship to elderly residents, assist caregivers, and organize recreational storytelling.',
+    fullDetails: 'Bring warmth, smiles, and companionship to elderly mothers and grandfathers living in care facilities across Odisha. Volunteer an afternoon reading classical Odia Bhagabata hymns, assisting in recreational card or board games, serving fresh fruit and tea, or simply offering a patient, loving listening ear to their lifelong memories.',
+    timeRequired: '2 - 3 Hours',
+    karmaPoints: 30,
+    difficulty: 'Medium',
+    location: 'Cuttack / Bhubaneswar / Puri Senior Citizen Care Shelters',
+    organization: 'HelpAge India Odisha & Utkal Senior Citizen Society',
+    image: '/doing-good-deeds.jpg',
+    impactMetric: '1 Meaningful Companion Visit (2+ hrs)',
+    guidelines: [
+      'Coordinate in advance with shelter managers for visiting hours.',
+      'Bring healthy fruits, warm woolen socks, biscuits, or reading material.',
+      'Engage in respectful, active listening without rushing conversations.',
+      'Obtain an endorsement note or activity selfie with shelter staff/superintendent.'
+    ]
+  },
+  {
+    id: 'act-support-artisan',
+    name: 'Support a Traditional Handicraft Artisan',
+    odiaName: 'ପାରମ୍ପାରିକ କାରିଗରଙ୍କୁ ପ୍ରୋତ୍ସାହନ',
+    category: 'Preserving Local Culture',
+    shortDescription: 'Buy directly from a master artisan, record their craft process, and help them list products digitally.',
+    fullDetails: 'Pattachitra painters, silver filigree jewelers, and applique weavers are the living heartbeat of Odisha. By visiting their home workshops, purchasing authentic handmade goods, and promoting their stories, you save an ancient lineage.',
+    timeRequired: '2 Hours',
+    karmaPoints: 20,
+    difficulty: 'Medium',
+    location: 'Raghurajpur / Pipili / Cuttack Alisha Bazar',
+    organization: 'Odisha Crafts Council & Karma-Path',
+    image: '/odisha-handloom-crafts.jpg',
+    impactMetric: '1 Artisan Family Supported',
+    guidelines: [
+      'Pay fair prices without aggressive bargaining.',
+      'Learn about the technique (natural vegetable dyes, stylus, filigree wires).',
+      'Share their work on social media tagging their name and village.',
+      'Upload a photo of your purchase alongside the smiling artisan.'
+    ]
+  },
+  {
+    id: 'act-temple-heritage-cleanup',
+    name: 'Ancient Temple Monument Cleaning & Heritage Care',
+    odiaName: 'ପ୍ରାଚୀନ ମନ୍ଦିର ପରିସର ସଫେଇ ଓ ରକ୍ଷଣାବେକ୍ଷଣ',
+    category: 'Preserving Local Culture',
+    shortDescription: 'Clean dry leaves, litter, and tourist debris from historic 10th-century stone temple courtyards in Ekamra Kshetra and Konark.',
+    fullDetails: 'Odisha ancient rock-cut and Kalinga architecture temples require respectful preservation. Join heritage volunteers in tidying temple grounds, clearing weed growth between stone steps, and encouraging pilgrims to keep sacred sanctums spotless.',
+    timeRequired: '2 Hours',
+    karmaPoints: 20,
+    difficulty: 'Easy',
+    location: 'Old Town Ekamra Kshetra / Mukteswar Temple, Bhubaneswar',
+    organization: 'Ekamra Heritage Care Guild',
+    image: '/puri.jpg',
+    impactMetric: '1 Heritage Temple Courtyard Cleaned',
+    guidelines: [
+      'Remove footwear and respect temple sanctum customs.',
+      'Use soft coir brooms to avoid scratching ancient sandstone reliefs.',
+      'Deposit discarded offerings and plastics in bio-degradable bins.',
+      'Upload before-and-after photos of the cleaned temple courtyard.'
+    ]
+  },
+  {
+    id: 'act-elderly-health-mobility',
+    name: 'Senior Citizen Health & Mobility Escort',
+    odiaName: 'ବରିଷ୍ଠ ନାଗରିକଙ୍କ ସ୍ୱାସ୍ଥ୍ୟ ସେବା ଓ ଚିକିତ୍ସାଳୟ ସହଯୋଗ',
+    category: 'Supporting Elderly People',
+    shortDescription: 'Assist elderly residents with hospital appointments, wheelchair mobility, queue tokens, and acquiring essential monthly medicines.',
+    fullDetails: 'Navigating crowded hospital OPDs, pharmacies, and eye clinics is daunting for frail seniors. Escort an elder from your local community or elderly shelter, assist with wheelchair navigation, queue tokens, and medicine collection.',
+    timeRequired: '2 - 3 Hours',
+    karmaPoints: 25,
+    difficulty: 'Medium',
+    location: 'AIIMS Bhubaneswar / District Headquarter Hospitals',
+    organization: 'Senior Smiles Care Network',
+    image: '/doing-good-deeds.jpg',
+    impactMetric: '1 Senior Citizen Medical Escort',
+    guidelines: [
+      'Handle wheelchairs and walking aids with extreme care and patience.',
+      'Verify medicine prescriptions with hospital pharmacists.',
+      'Ensure the elder is safely returned to their home or shelter.',
+      'Upload acknowledgement or consultation receipt with names redacted.'
+    ]
+  },
+  {
+    id: 'act-record-folklore',
+    name: 'Document Endangered Village Folklore & Folk Songs',
+    odiaName: 'ଗ୍ରାମୀଣ ଲୋକକଥା ଓ ପାରମ୍ପାରିକ ଗୀତ ଡିଜିଟାଲ୍ ସଂରକ୍ଷଣ',
+    category: 'Preserving Local Culture',
+    shortDescription: 'Record elder village artisans singing traditional Odia lullabies, boatman songs, or Gotipua oral history for the Cultural Vault.',
+    fullDetails: 'Centuries of oral wisdom, lullabies (Nanabaya Gita), and harvest chants risk fading away. Spend an hour with village elders or folk performers, recording high-quality audio or video clips to archive in Karma-Path open Cultural Vault.',
+    timeRequired: '2 Hours',
+    karmaPoints: 25,
+    difficulty: 'Medium',
+    location: 'Raghurajpur / Sadeibareni / Kotpad Artisan Hamlets',
+    organization: 'Odisha Oral Archive & Karma-Path',
+    image: '/culture-grid.jpg',
+    impactMetric: '1 Oral Folk Story / Song Digitized',
+    guidelines: [
+      'Always seek permission and explain the digital archive educational purpose.',
+      'Note down the singer name, village, and approx origin era of the ballad.',
+      'Record in a quiet environment free from blaring loudspeakers.',
+      'Upload the audio/video file directly to Karma-Path Cultural Archive.'
+    ]
+  },
+  {
+    id: 'act-elderly-blanket-ration',
+    name: 'Distribute Warm Blankets & Nutrition to Rural Elders',
+    odiaName: 'ଗ୍ରାମାଞ୍ଚଳ ବୃଦ୍ଧବୃଦ୍ଧାଙ୍କୁ ଶୀତବସ୍ତ୍ର ଓ ପୁଷ୍ଟିକର ଆହାର ବଣ୍ଟନ',
+    category: 'Supporting Elderly People',
+    shortDescription: 'Hand out warm woolen shawls, blankets, and dry protein rations to solitary elders in rural and tribal villages.',
+    fullDetails: 'Winters and monsoon chill severely impact vulnerable solitary elders in remote tribal hamlets. Deliver quality woolen blankets, thermal shawls, nutritious malt powder, and dry rations to senior citizens living in small village huts.',
+    timeRequired: '1 - 2 Hours',
+    karmaPoints: 20,
+    difficulty: 'Easy',
+    location: 'Kandhamal / Koraput / Mayurbhanj Rural Villages',
+    organization: 'Utkal Winter Care Mission',
+    image: '/doing-good-deeds.jpg',
+    impactMetric: '3 Senior Citizens Supported',
+    guidelines: [
+      'Distribute new or freshly sanitized warm blankets and clothes.',
+      'Treat every elder with fold-handed traditional Pranam (Namaskar).',
+      'Do not force elders to pose awkwardly; take respectful action photos.',
+      'Upload receipt or distribution photo.'
+    ]
+  },
   {
     id: 'act-clean-beach',
     name: 'Clean a Beach at Puri or Chandrabhaga',
     odiaName: 'ସମୁଦ୍ର କୂଳ ସଫେଇ ଅଭିଯାନ',
-    category: 'Environmental',
+    category: 'Environmental Protection',
     shortDescription: 'Collect and segregate plastic debris, discarded bottles, and nylon fishing nets to protect marine life.',
     fullDetails: 'Join thousands of pilgrims and tourists in keeping the sacred Bay of Bengal shoreline pristine. Participants receive eco-friendly burlap collection sacks, gloves, and drop-off instructions at Puri or Chandrabhaga Beach.',
     timeRequired: '2 - 3 Hours',
@@ -195,7 +357,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-plant-tree',
     name: 'Plant Native Trees in Mahanadi River Belt',
     odiaName: 'ବୃକ୍ଷରୋପଣ ଓ ସବୁଜିମା ସୃଷ୍ଟି',
-    category: 'Environmental',
+    category: 'Environmental Protection',
     shortDescription: 'Plant indigenous saplings (Neem, Peepal, Banyan, Mahua) to prevent soil erosion and expand green cover.',
     fullDetails: 'Odisha river valleys thrive on indigenous greenery. Plant a native sapling, secure a tree guard or bamboo barrier, and pledge to nourish it during your trip or partner with local youth clubs for ongoing watering.',
     timeRequired: '1 - 2 Hours',
@@ -216,7 +378,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-teach-child',
     name: 'Teach a Child in a Heritage Craft Village',
     odiaName: 'ଶିଶୁଙ୍କୁ ଶିକ୍ଷାଦାନ ଓ ଦିଗ୍‌ଦର୍ଶନ',
-    category: 'Education',
+    category: 'Education & Child Welfare',
     shortDescription: 'Conduct a 2-hour reading, math, or digital literacy session for children of rural artisan families.',
     fullDetails: 'Artisan children possess immense visual talent but often lack access to language tutoring, basic computer concepts, and storybooks. Share knowledge, teach basic english conversation, or conduct an interactive storytelling hour.',
     timeRequired: '2 - 3 Hours',
@@ -237,7 +399,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-donate-food',
     name: 'Distribute Nutritious Meals to People in Need',
     odiaName: 'ଅନ୍ନଦାନ ଓ କ୍ଷୁଧା ନିବାରଣ',
-    category: 'Helping People',
+    category: 'Helping People in Need',
     shortDescription: 'Provide freshly cooked wholesome meals (Khichdi, Dalma, Pakhala) to daily-wage workers and shelter residents.',
     fullDetails: 'In sacred Jagannath culture, sharing food is the highest virtue (Maha Dana). Partner with verified local community kitchens or prepare clean food packets to distribute in labor settlements and temporary shelters.',
     timeRequired: '1 - 2 Hours',
@@ -255,31 +417,10 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     ]
   },
   {
-    id: 'act-old-age-home',
-    name: 'Spend Quality Time at an Old-Age Shelter',
-    odiaName: 'ବୃଦ୍ଧାଶ୍ରମରେ ବରିଷ୍ଠଙ୍କ ସେବା',
-    category: 'Elderly Care',
-    shortDescription: 'Visit elderly residents, listen to their oral memories, donate essential supplies, and spread joy.',
-    fullDetails: 'Many elderly mothers and grandfathers in old-age homes crave companionship and listening ears. Spend an afternoon playing traditional board games, sharing Odia Bhajans, or helping them organize their daily living spaces.',
-    timeRequired: '2 - 3 Hours',
-    karmaPoints: 25,
-    difficulty: 'Medium',
-    location: 'Cuttack / Balasore Senior Citizen Homes',
-    organization: 'HelpAge India Odisha Chapter',
-    image: '/culture-grid.jpg',
-    impactMetric: '1 Meaningful Companion Visit',
-    guidelines: [
-      'Call ahead or coordinate with the shelter supervisor.',
-      'Bring useful fruits, biscuits, woolen socks, or personal hygiene kits.',
-      'Offer genuine active listening without rushing.',
-      'Obtain a signature or note of appreciation from the shelter administrator.'
-    ]
-  },
-  {
     id: 'act-donate-books',
     name: 'Donate Books & Stationery to Rural Classrooms',
     odiaName: 'ପୁସ୍ତକ ଓ ଖାତା କଲମ ଦାନ',
-    category: 'Education',
+    category: 'Education & Child Welfare',
     shortDescription: 'Donate primary textbooks, storybooks in Odia/English, pencils, and art supplies to a village school.',
     fullDetails: 'Equip rural government schools and community libraries with inspiring reading books, encyclopedias, geometry boxes, and drawing stationery to open new worlds for children in remote blocks.',
     timeRequired: '1 Hour',
@@ -297,31 +438,31 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     ]
   },
   {
-    id: 'act-support-artisan',
-    name: 'Support a Traditional Handicraft Artisan',
-    odiaName: 'ପାରମ୍ପାରିକ କାରିଗରଙ୍କୁ ପ୍ରୋତ୍ସାହନ',
-    category: 'Culture & Heritage',
-    shortDescription: 'Buy directly from a master artisan, record their craft process, and help them list products digitally.',
-    fullDetails: 'Pattachitra painters, silver filigree jewelers, and applique weavers are the living heartbeat of Odisha. By visiting their home workshops, purchasing authentic handmade goods, and promoting their stories, you save an ancient lineage.',
+    id: 'act-drinking-water-kiosk',
+    name: 'Set Up Free Drinking Water Kiosks (Jala Chhatra)',
+    odiaName: 'ଗ୍ରୀଷ୍ମକାଳୀନ ଜଳଛତ୍ର ସେବା ଓ ତୃଷ୍ଣା ନିବାରଣ',
+    category: 'Helping People in Need',
+    shortDescription: 'Serve cool, clean earthen-pot water and buttermilk (Torani / Belapana) to pilgrims and daily-wage laborers.',
+    fullDetails: 'Odisha ancient summer tradition of Jala Chhatra quenches the thirst of thousands under the scorching sun. Help replenish clay pots (Matkas), distribute refreshing Bela Pana, and maintain a shaded roadside water stall for weary travelers.',
     timeRequired: '2 Hours',
     karmaPoints: 20,
-    difficulty: 'Medium',
-    location: 'Raghurajpur / Pipili / Cuttack Alisha Bazar',
-    organization: 'Odisha Crafts Council & Karma-Path',
+    difficulty: 'Easy',
+    location: 'Bhubaneswar Lingaraj Temple Road / Puri Bada Danda',
+    organization: 'Utkal Seva Vahini & Karma-Path',
     image: '/culture-grid.jpg',
-    impactMetric: '1 Artisan Family Supported',
+    impactMetric: '50+ Pilgrims Hydrated',
     guidelines: [
-      'Pay fair prices without aggressive bargaining.',
-      'Learn about the technique (natural vegetable dyes, stylus, filigree wires).',
-      'Share their work on social media tagging their name and village.',
-      'Upload a photo of your purchase alongside the smiling artisan.'
+      'Use only certified boiled or RO filtered drinking water.',
+      'Keep clay pots covered with clean cotton cloths.',
+      'Serve with clean reusable or compostable leaf cups (Dona).',
+      'Upload distribution photos showing the active water kiosk.'
     ]
   },
   {
     id: 'act-blood-donation',
     name: 'Join a Voluntary Blood Donation Camp',
     odiaName: 'ସ୍ୱେଚ୍ଛାକୃତ ରକ୍ତଦାନ ଅଭିଯାନ',
-    category: 'Community Service',
+    category: 'Community & Social Service',
     shortDescription: 'Donate a unit of blood at certified hospital blood banks or licensed Red Cross community camps.',
     fullDetails: 'Blood saves lives during accidents, complex surgeries, and thalassemia management. Points honor your verified participation and courage in donating at an accredited government or Red Cross medical bank.',
     timeRequired: '1 - 2 Hours',
@@ -342,7 +483,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-river-cleaning',
     name: 'Riverbank Restoration Drive at Daya River',
     odiaName: 'ଦୟା ନଦୀ କୂଳ ସଫେଇ ଓ ସୁରକ୍ଷା',
-    category: 'Environmental',
+    category: 'Environmental Protection',
     shortDescription: 'Remove floating trash, religious immersion remnants, and plastic from historic river ghats.',
     fullDetails: 'The Daya River holds immense historical gravity where Emperor Ashoka renounced violence following the Kalinga War. Help clean its banks to preserve freshwater ecosystems and riverine bio-diversity.',
     timeRequired: '2 - 3 Hours',
@@ -363,7 +504,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-disaster-relief',
     name: 'Volunteer in Cyclone & Monsoon Relief Support',
     odiaName: 'ବାତ୍ୟା ଓ ବନ୍ୟା ବିପର୍ଯ୍ୟୟ ସହାୟତା',
-    category: 'Community Service',
+    category: 'Community & Social Service',
     shortDescription: 'Help pack dry ration kits, water purification sachets, and assist local emergency shelters.',
     fullDetails: 'Odisha is world-renowned for exemplary disaster management. When cyclones or monsoon floods occur, volunteers are needed to pack rations, assist helpline desks, and coordinate shelter logistics.',
     timeRequired: '4 - 6 Hours',
@@ -384,7 +525,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-plastic-upcycle',
     name: 'Plastic Waste Collection & Upcycling Drive',
     odiaName: 'ପ୍ଲାଷ୍ଟିକ୍ ବର୍ଜ୍ୟ ସଂଗ୍ରହ ଓ ପୁନଃଚକ୍ରଣ',
-    category: 'Environmental',
+    category: 'Environmental Protection',
     shortDescription: 'Collect PET bottles and plastic wrappers from tourist sites and deliver them to recycling kiosks.',
     fullDetails: 'Help turn waste into value! Gather discarded plastic bottles from Konark, Khandagiri, or Dhauli and drop them at municipal bottle-crusher kiosks or eco-brick collection points.',
     timeRequired: '2 Hours',
@@ -405,7 +546,7 @@ export const KARMA_ACTIVITIES: KarmaActivity[] = [
     id: 'act-wildlife-guard',
     name: 'Olive Ridley Turtle Nesting Sanctuary Watch',
     odiaName: 'ଅଲିଭ୍ ରିଡଲେ କଇଁଛ ସଂରକ୍ଷଣ',
-    category: 'Environmental',
+    category: 'Environmental Protection',
     shortDescription: 'Assist forest watchers in cordoning off beach nests and preventing feral dog intrusion.',
     fullDetails: 'Rushikulya and Gahirmatha are the world largest mass-nesting grounds (Arribada) for endangered Olive Ridley sea turtles. Volunteers assist in night illumination controls and beach safety.',
     timeRequired: '3 Hours',
