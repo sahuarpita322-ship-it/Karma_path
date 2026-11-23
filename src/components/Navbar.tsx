@@ -17,11 +17,13 @@ import {
   FaMapMarkerAlt,
   FaBookOpen,
   FaHeart,
-  FaDesktop
+  FaDesktop,
+  FaDownload
 } from 'react-icons/fa';
 import { useStore } from '../context/store';
 import LanguageSwitcher from './LanguageSwitcher';
 import { DesktopAppModal } from './DesktopAppModal';
+import { usePWAInstall } from '../hooks/usePWAInstall';
 
 export function Navbar() {
   const karmaBalance = useStore((s) => s.karmaBalance);
@@ -33,6 +35,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [desktopModalOpen, setDesktopModalOpen] = useState(false);
+  const { promptInstall, isInstallable, isInstalled, isLocalhost } = usePWAInstall();
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -153,6 +156,22 @@ export function Navbar() {
         {/* Right Action Tools: Language, Theme Toggle & User Auth */}
         <div className="flex items-center gap-2 sm:gap-3">
           
+          {/* PWA Install Button (highlighted on localhost or when installable) */}
+          {!isInstalled && (
+            <button
+              onClick={promptInstall}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition shadow-sm cursor-pointer ${
+                isLocalhost 
+                  ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:scale-105 active:scale-95 shadow-emerald-500/20' 
+                  : 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/35 hover:bg-emerald-500/25'
+              }`}
+              title="Install Karma-Path to Desktop / Device (Works 100% Offline)"
+            >
+              <FaDownload className="text-xs animate-bounce" />
+              <span>{isLocalhost ? 'Install Localhost' : 'Install App'}</span>
+            </button>
+          )}
+
           {/* Offline Ready & Desktop App Trigger Pill */}
           <button
             onClick={() => setDesktopModalOpen(true)}
@@ -307,6 +326,20 @@ export function Navbar() {
             <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)} className="p-2.5 rounded-xl bg-[#7955AE]/10 dark:bg-white/5 flex items-center gap-2 text-[#302342] dark:text-[#F8F4FF]">
               <FaCoins className="text-[#B9A5DF]" /> My Journey
             </Link>
+            {!isInstalled && (
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  promptInstall();
+                }}
+                className="p-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white flex items-center justify-between font-bold text-xs shadow-md"
+              >
+                <div className="flex items-center gap-2">
+                  <FaDownload className="animate-bounce" /> {isLocalhost ? 'Install Localhost App' : 'Install Karma-Path App'}
+                </div>
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-white/20">Offline PWA</span>
+              </button>
+            )}
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
@@ -338,6 +371,10 @@ export function Navbar() {
       <DesktopAppModal
         isOpen={desktopModalOpen}
         onClose={() => setDesktopModalOpen(false)}
+        onInstall={promptInstall}
+        isInstallable={isInstallable}
+        isInstalled={isInstalled}
+        isLocalhost={isLocalhost}
       />
     </header>
   );

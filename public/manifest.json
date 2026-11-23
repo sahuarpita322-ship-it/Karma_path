@@ -1,15 +1,22 @@
 {
-  "name": "Karma Path",
-  "short_name": "Karma",
+  "name": "Karma-Path | Discover Odisha. Experience Its Soul.",
+  "short_name": "Karma-Path",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#16a34a",
+  "background_color": "#180B2B",
+  "theme_color": "#180B2B",
+  "description": "Complete Offline & Desktop Heritage & Safe Travel Platform for Odisha",
   "icons": [
     {
-      "src": "/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/icon.svg.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     }
   ]
