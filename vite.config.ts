@@ -46,6 +46,8 @@ export default defineConfig({
     })
   ],
   preview: {
-    allowedHosts: ['karma-path.onrender.com']
+    allowedHosts: true,
+    host: '0.0.0.0',
+    port: process.env.PORT ? parseInt(process.env.PORT, 10) : 10000
   }
 })
