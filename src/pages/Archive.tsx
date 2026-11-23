@@ -165,28 +165,28 @@ export function Archive() {
       name: 'Gotipua Dance',
       region: 'Raghurajpur / Puri',
       desc: 'Ancient acrobatic dance by young boys in female attire praised as the precursor of classical Odissi. Performed to praise Lord Jagannath.',
-      image: '/culture-grid.jpg',
+      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
       privacy: 'Public'
     },
     {
       name: 'Mayurbhanj Chhau',
       region: 'Mayurbhanj / Northern Odisha',
       desc: 'Vigorous martial dance featuring shield and sword choreography, acrobatic leaps, and nature-inspired postures without masks.',
-      image: '/culture-grid.jpg',
+      image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=800&q=80',
       privacy: 'Public'
     },
     {
       name: 'Dalkhai Folk Dance',
       region: 'Western Odisha / Sambalpur',
       desc: 'Celebrated by women during Bhaijiuntia and Dussehra to the thunderous acoustic beats of Dhol, Nishan, and Mahuri instruments.',
-      image: '/culture-grid.jpg',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       privacy: 'Public'
     },
     {
       name: 'Bonda Hill Sacred Invocation',
       region: 'Bonda Hills / Malkangiri',
       desc: 'Sacred mountain prayer held before seasonal foraging. Respectfully cataloged with community consent.',
-      image: '/culture-grid.jpg',
+      image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80',
       privacy: 'Community Protected'
     }
   ];

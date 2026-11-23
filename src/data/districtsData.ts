@@ -37,7 +37,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Pala', 'Daskathia', 'Sambalpuri Dalkhai folk song integrations'],
     festivals: ['Maa Hingula Yatra', 'Ratha Yatra', 'Prathamastami', 'Makar Sankranti'],
     languagesAndDialects: ['Odia (Central Standard)', 'Ho', 'Munda'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -56,7 +56,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dalkhai', 'Rasarkeli', 'Nachnia', 'Baja Re Baja Dhol'],
     festivals: ['Nuakhai', 'Sital Sasthi', 'Puajiuntia', 'Bhaijiuntia', 'Dhanu Yatra'],
     languagesAndDialects: ['Sambalpuri / Kosali', 'Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -75,7 +75,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Chhau Dance (Nilgiri style)', 'Pala', 'Daskathia'],
     festivals: ['Makar Mela Nilgiri', 'Chandan Yatra', 'Dussehra', 'Kartik Purnima'],
     languagesAndDialects: ['North Balasori Odia', 'Santhali'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -94,7 +94,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dalkhai', 'Dhanu Yatra Theatre', 'Karma Dance', 'Ganda Baja'],
     festivals: ['Dhanu Yatra', 'Nuakhai', 'Baisakha Mela Nrusinghanath'],
     languagesAndDialects: ['Sambalpuri / Kosali', 'Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1534177616072-ef7dc120449d?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -113,7 +113,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Mughal Tamasha', 'Pala', 'Daskathia'],
     festivals: ['Maha Shivaratri at Aradi', 'Bhadrakali Chaitra Mela', 'Kali Puja'],
     languagesAndDialects: ['Coastal Odia', 'Urdu / Odia syncretic idioms'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -132,7 +132,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Karma Dance', 'Dalkhai', 'Danda Nata'],
     festivals: ['Buddha Purnima', 'Ratha Yatra', 'Danda Jatra', 'Nuakhai'],
     languagesAndDialects: ['Odia', 'Sambalpuri', 'Kondh dialects'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -151,7 +151,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Odissi Classical Dance', 'Ghoda Nacha', 'Pala'],
     festivals: ['Bali Yatra', 'Durga Puja Silver Tableaux', 'Kartik Purnima Boita Bandana'],
     languagesAndDialects: ['Standard Coastal Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -170,7 +170,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Karma Dance', 'Ghumura', 'Dalkhai'],
     festivals: ['Nuakhai', 'Pradhanpat Utsav', 'Sivaratri'],
     languagesAndDialects: ['Sambalpuri / Kosali', 'Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -189,7 +189,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Danda Nata', 'Pala', 'Mahima Bhajans & Alekha Chants'],
     festivals: ['Joranda Magha Mela', 'Kapilash Shivaratri', 'Gaja Laxmi Puja'],
     languagesAndDialects: ['Central Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -208,7 +208,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Saora Tribal Dance', 'Lanjia Saora Dance', 'Dhemsa'],
     festivals: ['Maha Shivaratri at Mahendragiri', 'Losar (Tibetan New Year)', 'Ratha Yatra'],
     languagesAndDialects: ['Odia (Southern dialect)', 'Saora', 'Kui', 'Tibetan'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -266,7 +266,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
       'Gopalpur Beach Festival'
     ],
     languagesAndDialects: ['Southern Odia (Ganjami Odia)', 'Telugu influences in border trade'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -285,7 +285,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Pala', 'Daskathia', 'Gotipua'],
     festivals: ['Sarala Chaitra Parba', 'Kalinga Bali Yatra Paradeep', 'Ratha Yatra'],
     languagesAndDialects: ['Coastal Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -304,7 +304,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Pala', 'Daskathia', 'Ghoda Nacha'],
     festivals: ['Biraja Ratha Yatra (only chariot festival for a Goddess in India)', 'Baruni Snana at Baitarani', 'Chhatia Mela'],
     languagesAndDialects: ['Central / Coastal Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -323,7 +323,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dalkhai', 'Karma Dance', 'Rasarkeli'],
     festivals: ['Sivaratri at Koilighugar', 'Nuakhai', 'Ratha Yatra'],
     languagesAndDialects: ['Sambalpuri / Kosali', 'Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1508873696983-2df5703bc20d?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -342,7 +342,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Ghumura Dance (World-famous martial folk dance)', 'Madal Baja', 'Dalkhai'],
     festivals: ['Chhatar Yatra of Maa Manikeswari', 'Nuakhai', 'Kalahandi Utsav'],
     languagesAndDialects: ['Kalahandia Odia / Kosali', 'Kui'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -361,7 +361,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Kui Tribal Dance', 'Kutia Kondh Flute Melodies', 'Danda Nata'],
     festivals: ['Daringbadi Winter Carnival', 'Kedu Festival of Kondhs', 'Ratha Yatra Phulbani'],
     languagesAndDialects: ['Kui', 'Kuvi', 'Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -380,7 +380,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Pala', 'Daskathia', 'Ghoda Nacha'],
     festivals: ['Rasabali Bhoga Diwas', 'Ratha Yatra of Baladevjew (Brahmataladhwaja Ratha)', 'Kendrapara Utsav'],
     languagesAndDialects: ['Coastal Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -399,7 +399,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Chhau Dance', 'Juang Tribal Dance', 'Ho Dance'],
     festivals: ['Ghatagaon Tarini Chaitra Yatra', 'Baruni Yatra Gonasika', 'Ratha Yatra (Nandighosha)'],
     languagesAndDialects: ['Odia', 'Ho', 'Juang', 'Santhali'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -418,7 +418,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Odissi Classical Dance', 'Paika Akhada (Martial Dance)', 'Gotipua'],
     festivals: ['Rukuna Ratha Yatra (Lingaraj)', 'Mukteswar Dance Festival', 'Dhauli Kalinga Mahotsav'],
     languagesAndDialects: ['Standard Literary Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -437,7 +437,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dhemsa Dance', 'Gadaba Tribal Dance', 'Desia Melodies'],
     festivals: ['Parab (Tribal Cultural Festival)', 'Deomali Parba', 'Chaitra Parba'],
     languagesAndDialects: ['Desia Odia', 'Gutob', 'Parji', 'Kui'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -456,7 +456,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Bonda Dance', 'Koya Horn Dance (Permakokata)'],
     festivals: ['Malyabanta Mahotsav', 'Bija Pandu Festival of Koyas'],
     languagesAndDialects: ['Remo (Bonda)', 'Koya', 'Desia Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -475,7 +475,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Mayurbhanj Chhau Dance', 'Santhali Dance with Madal', 'Jhumair'],
     festivals: ['Baripada Ratha Yatra (Women pull Maa Subhadra ratha)', 'Chhau Mahotsav', 'Saharai Festival'],
     languagesAndDialects: ['Odia', 'Santhali (Ol Chiki)', 'Ho', 'Mundari'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -494,7 +494,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dhemsa', 'Gond Dance', 'Ghumura'],
     festivals: ['Monohara Yatra', 'Chaitra Parba', 'Nuakhai'],
     languagesAndDialects: ['Desia Odia', 'Gondi', 'Bhatri'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -513,7 +513,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Danda Nata', 'Paika Dance', 'Ramaleela of Dasapalla'],
     festivals: ['Maha Shivaratri at Sarankul', 'Kantilo Magha Mela', 'Dasapalla Lanka Podi Yatra'],
     languagesAndDialects: ['Central Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -532,7 +532,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dalkhai', 'Karma Dance', 'Ghumura'],
     festivals: ['Nuakhai', 'Patora Sivaratri Mela', 'Khariar Lok Mahotsav'],
     languagesAndDialects: ['Sambalpuri / Kosali', 'Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -612,7 +612,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dongria Kondh Dance', 'Dhemsa', 'Shabari Folk Songs'],
     festivals: ['Chaitra Parba', 'Majhighariani Chaitra Yatra', 'Dongria Kondh Niyamraja Festival'],
     languagesAndDialects: ['Kui', 'Desia Odia', 'Saora'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -631,7 +631,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Sambalpuri Folk Dance', 'Dalkhai', 'Rasarkeli', 'Nachnia', 'Baja Re Baja Dhol'],
     festivals: ['Nuakhai', 'Sital Sasthi Carnival', 'Samaleswari Puja'],
     languagesAndDialects: ['Sambalpuri / Kosali', 'Standard Odia'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -650,7 +650,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Dalkhai', 'Karma Dance', 'Ganda Baja'],
     festivals: ['Lanka Podi Yatra', 'Nuakhai', 'Sital Sasthi', 'Sivaratri at Subarnameru'],
     languagesAndDialects: ['Sambalpuri / Kosali'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   },
   {
@@ -669,7 +669,7 @@ export const all30OdishaDistricts: DistrictInfo[] = [
     folkMusicAndDances: ['Karma Dance', 'Oraon Tribal Dance', 'Chhau Dance of Bonai'],
     festivals: ['Vedvyas Sivaratri Mela', 'Karma Puja', 'Ratha Yatra', 'Dussehra at Hanuman Vatika'],
     languagesAndDialects: ['Sundargadahi / Sadri', 'Odia', 'Kurukh (Oraon)', 'Mundari'],
-    heroImage: '/culture-grid.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80',
     verifiedStatus: 'Verified'
   }
 ];

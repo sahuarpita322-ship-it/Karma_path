@@ -478,7 +478,7 @@ export function Marketplace() {
                     {/* Image Area with Badges & Wishlist */}
                     <div className="relative h-56 w-full overflow-hidden bg-slate-900">
                       <img
-                        src={product.images[0] || '/culture-grid.jpg'}
+                        src={product.images[0] || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80'}
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
